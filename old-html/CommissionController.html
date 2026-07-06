@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>Impact : Commission Controller</title>
+  <link rel="stylesheet" href="https://unpkg.com/primeflex@3.3.1/primeflex.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/primeflex.css">
+
+  <link rel="stylesheet" href="/scss/style.css">
+</head>
+
+<body class="home-page commission-controller-page">
+  <nav class="navbar rounded-0 mb-0 border-none z-100" id="navbarMain">
+    <div class="body-container flex justify-content-between w-full align-items-center">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+          data-target="#bs-example-navbar-collapse-1" aria-expanded="false" title="Open Menu">
+          <span class="sr-only">Toggle navigation</span>
+          <img src="img/menu-bar.svg" alt="menu" class="w-2rem">
+        </button>
+        <a class="navbar-brand py-2 pl-0" href="/">
+          <img src="img/Logo.svg" alt="Logo" class="w-18rem">
+        </a>
+        <p class="navbar-text">
+          <a href="/" class="navbar-link text-decoration flex align-items-center"
+            style="white-space: nowrap; gap: 8px;">
+            <span class="font-bold project-brand-text">A3-00001234</span>
+            <span class="font-bold project-brand-text">IMPACT DEMO</span>
+            <!-- <img src="img/impact-image.svg" alt="IMPACT" class="w-10rem"> -->
+          </a>
+        </p>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse w-full" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li><a href="PointStatusList.html">Points</a></li>
+          <li><a href="ControllerStatusList.html">Controllers</a></li>
+          <li><a href="IssuesList.html">Issues</a></li>
+          <li><a href="ImportFiles.html">Files</a></li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Reports <span
+                class="glyphicon glyphicon-chevron-down navbar-dropdown-icon" aria-hidden="true"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="CommissioningStatusReport.html">IO Point Commissioning Type A</a></li>
+              <li><a href="CommissioningStatusReportWithPmd.html">IO Point Commissioning Type B</a></li>
+              <li><a href="Reports/ControllerInstallReport.html">Installation Points List with Wire
+                  Tags</a></li>
+              <li><a href="Reports/ControllerStatusReport.html">Controller Status Report</a></li>
+              <li><a href="ControllerMetaDataReport.html">Controller Meta Data</a></li>
+              <li><a href="QRCodes.html">Controller QR Codes</a></li>
+              <li><a href="Reports/IssuesReport.html">Project Issues</a></li>
+              <li><a href="ControllerPointsOfflineComm.html">Offline Commissioning Sheet</a></li>
+              <li><a href="Reports/ControllerPointsReport.html">Controller Points Export Report</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Project <span
+                class="glyphicon glyphicon-chevron-down navbar-dropdown-icon" aria-hidden="true"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="Default.html">Change Project</a></li>
+              <li><a href="RemoveFromProject.html">Remove me from this Project</a></li>
+              <li><a href="ProjectList.html">Projects List</a></li>
+              <li><a href="ProjectAddEdit.html">Create New Project</a></li>
+              <li><a href="ProjectDashboard.html">Project Dashboard</a></li>
+              <li><a href="ProjectUserList.html">Project Members</a></li>
+              <li><a href="ControllerChangesList.html">Change History</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Help <span
+                class="glyphicon glyphicon-chevron-down navbar-dropdown-icon" aria-hidden="true"></span></a>
+            <ul class="dropdown-menu">
+              <li><a
+                  href="https://schneiderelectric.sharepoint.com/:b:/s/DigitalBuildingsPacificZone/EZIyNNJga_NKuHu8CuhUykIBxtE7fz06u7YJjT_RmH3Agg?e=uFUqwP"
+                  target="_blank">Installers Guide</a></li>
+              <li><a
+                  href="https://schneiderelectric.sharepoint.com/:b:/s/DigitalBuildingsPacificZone/EWXBl6uFRNRDsODbGxfKwUwBa1nMA_7JJj7ixkebrIRyYg?e=ph9weM"
+                  target="_blank">Commissioning Guide</a></li>
+              <li><a
+                  href="https://schneiderelectric.sharepoint.com/:b:/s/DigitalBuildingsPacificZone/Eb4xtDPEkHVFin7eCegHu8QBGpmtR0-MUo6qkQLKM40cbw?e=kMRZrK"
+                  target="_blank">Project Administrators Guide</a></li>
+              <li><a
+                  href="https://schneiderelectric.sharepoint.com/:b:/s/DigitalBuildingsPacificZone/ET9GkJ9M9BxHrkPVckLZal8BteoplUybuni7d7nz4Cbvvw?e=oKKeYO"
+                  target="_blank">Set up Teams Notifications</a></li>
+              <li><a
+                  href="https://schneiderelectric.sharepoint.com/:b:/r/sites/DigitalBuildingsPacificZone/Main%20Site%20Documents/Systems/EEP/EEP%20Standards%20PUBLIC/EEPS07_160329_Installation%20Standards%20R2.2_dl.pdf?csf=1&amp;web=1&amp;e=ntsdiT"
+                  target="_blank">Installation Standards</a></li>
+              <li><a
+                  href="https://schneiderelectric.sharepoint.com/sites/DigitalBuildingsPacificZone/SitePages/Tools_IMPACT.aspx"
+                  target="_blank">IMPACT on Share Point</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <ul class="nav navbar-nav navbar-right w-auto">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle flex align-items-center gap-2 py-2" data-toggle="dropdown" role="button"
+            aria-haspopup="true" aria-expanded="false">
+
+            <img src="/img/profile.svg" alt="" class="img-responsive w-3rem border-circle" title="User Profile">
+
+            <span>
+              <span style="white-space: nowrap; display: block;">John Doe</span>
+              <span style="white-space: nowrap; display: block;">Global Leader</span>
+            </span>
+
+            <span class="glyphicon glyphicon-chevron-down navbar-dropdown-icon" aria-hidden="true"></span>
+          </a>
+          <ul class="dropdown-menu profile-dropdown-menu">
+            <li><span class="profile-dropdown-header">Appearance</span></li>
+            <li><a href="#" class="profile-dropdown-item">Light</a></li>
+            <li><a href="#" class="profile-dropdown-item">Dark</a></li>
+            <li><a href="#" class="profile-dropdown-item">Auto (Default)</a></li>
+
+            <li class="profile-dropdown-divider"></li>
+
+            <li><span class="profile-dropdown-header">Navigation layout</span></li>
+            <li><a href="#" class="profile-dropdown-item">Vertical (Sidebar)</a></li>
+            <li><a href="#" class="profile-dropdown-item">Horizontal (Top)</a></li>
+
+            <li class="profile-dropdown-divider"></li>
+
+            <li><a href="#" class="profile-dropdown-item">Profile</a></li>
+            <li><a href="/UserAccount/Logout" class="profile-dropdown-item">Logout</a></li>
+          </ul>
+        </li>
+      </ul>
+      <!-- /.navbar-collapse -->
+    </div>
+  </nav>
+
+  <main class="main bg-default sister-technology-page">
+    <div class="body-container">
+      <div class="breadcrumb-wrapper">
+        <h2 class="breadcrumb-title">
+          <span class="glyphicon glyphicon-cog breadcrumb-title-icon" aria-hidden="true"></span>
+          Controller Install and Commissioning Status
+        </h2>
+        <div class="breadcrumb-group">
+          <a href="index.html" class="breadcrumb-item">Dashboard</a>
+          <span class="breadcrumb-separator">/</span>
+          <a href="ControllerStatusList.html" class="breadcrumb-item">Controller List</a>
+          <span class="breadcrumb-separator">/</span>
+          <span class="breadcrumb-current">Commission Controller</span>
+        </div>
+      </div>
+
+      <section class="controller-commission-hero">
+        <div class="controller-hero-head">
+          <div>
+            <p class="controller-hero-kicker">Controller Workspace</p>
+            <h3 class="controller-hero-title">AHU01-ASP</h3>
+            <p class="controller-hero-subtitle">Track installation and commissioning with one guided flow.</p>
+            <div class="controller-hero-badges">
+              <span class="controller-hero-badge is-success">7 Completed</span>
+              <span class="controller-hero-badge is-warning">3 In Progress</span>
+              <span class="controller-hero-badge">0 Blocked</span>
+            </div>
+          </div>
+          <div class="controller-hero-right">
+            <img src="public/ASP.png" alt="ASP Controller" class="controller-hero-image">
+            <button type="button" class="btn btn-default controller-meta-delete-btn">
+              <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+              Delete Controller
+            </button>
+          </div>
+        </div>
+
+        <div class="controller-hero-meta-grid">
+          <article class="controller-meta-card">
+            <span class="controller-meta-label">Controller Name</span>
+            <div class="controller-meta-row">
+              <strong class="controller-meta-value">AHU01-ASP</strong>
+              <button type="button" class="btn btn-link controller-meta-action">Rename</button>
+            </div>
+          </article>
+          <article class="controller-meta-card">
+            <span class="controller-meta-label">System Drawing</span>
+            <strong class="controller-meta-value">NA</strong>
+          </article>
+          <article class="controller-meta-card">
+            <span class="controller-meta-label">Last Updated</span>
+            <strong class="controller-meta-value controller-meta-mono">manikantanani14@gmail.com</strong>
+            <span class="controller-meta-helper">29/04/2026 15:21:03</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="controller-commission-card installation-section">
+        <div class="controller-commission-head-row">
+          <h3 class="controller-commission-title">Controller Installation Status (to be completed by the System
+            Installer)</h3>
+        </div>
+
+        <div class="controller-status-list installation-premium-list" role="group"
+          aria-label="Controller installation status">
+          <article class="installation-premium-row">
+            <div class="controller-status-content">
+              <h4 class="controller-status-name">Controller Installed</h4>
+              <p class="controller-status-note">Hardware mounted and secured.</p>
+            </div>
+            <div class="installation-inline-options" role="radiogroup" aria-label="Controller Installed status">
+              <label class="installation-radio-item"><input type="radio" name="controllerInstalled"
+                  value="notStarted"><span>Not Started</span></label>
+              <label class="installation-radio-item"><input type="radio" name="controllerInstalled"
+                  value="inProgress"><span>In Progress</span></label>
+              <label class="installation-radio-item"><input type="radio" name="controllerInstalled" value="complete"
+                  checked><span>Complete</span></label>
+              <label class="installation-radio-item"><input type="radio" name="controllerInstalled"
+                  value="notApplicable"><span>Not Applicable</span></label>
+            </div>
+          </article>
+
+          <article class="installation-premium-row">
+            <div class="controller-status-content">
+              <h4 class="controller-status-name">Panel Terminated</h4>
+              <p class="controller-status-note">All panel terminations verified.</p>
+            </div>
+            <div class="installation-inline-options" role="radiogroup" aria-label="Panel Terminated status">
+              <label class="installation-radio-item"><input type="radio" name="panelTerminated"
+                  value="notStarted"><span>Not Started</span></label>
+              <label class="installation-radio-item"><input type="radio" name="panelTerminated"
+                  value="inProgress"><span>In Progress</span></label>
+              <label class="installation-radio-item"><input type="radio" name="panelTerminated" value="complete"
+                  checked><span>Complete</span></label>
+              <label class="installation-radio-item"><input type="radio" name="panelTerminated"
+                  value="notApplicable"><span>Not Applicable</span></label>
+            </div>
+          </article>
+
+          <article class="installation-premium-row">
+            <div class="controller-status-content">
+              <h4 class="controller-status-name">Ready to Power Up</h4>
+              <p class="controller-status-note">Pre-power checks are complete.</p>
+            </div>
+            <div class="installation-inline-options" role="radiogroup" aria-label="Ready to Power Up status">
+              <label class="installation-radio-item"><input type="radio" name="readyToPowerUp"
+                  value="notStarted"><span>Not Started</span></label>
+              <label class="installation-radio-item"><input type="radio" name="readyToPowerUp"
+                  value="inProgress"><span>In Progress</span></label>
+              <label class="installation-radio-item"><input type="radio" name="readyToPowerUp" value="complete"
+                  checked><span>Complete</span></label>
+              <label class="installation-radio-item"><input type="radio" name="readyToPowerUp"
+                  value="notApplicable"><span>Not Applicable</span></label>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="controller-commission-card commissioning-section">
+        <div class="controller-commission-head-row">
+          <h3 class="controller-commission-title">Controller Commissioning Status (to be completed by the Commissioning
+            Techician)</h3>
+        </div>
+
+        <div class="controller-status-list commissioning-premium-list" role="group"
+          aria-label="Controller commissioning status">
+          <article class="commissioning-premium-row">
+            <div class="controller-status-content">
+              <h4 class="controller-status-name">Controller Programmed</h4>
+              <p class="controller-status-note">Program download and baseline checks.</p>
+            </div>
+            <div class="commissioning-inline-options" role="radiogroup" aria-label="Controller Programmed status">
+              <label class="commissioning-radio-item"><input type="radio" name="controllerProgrammed"
+                  value="notStarted"><span>Not Started</span></label>
+              <label class="commissioning-radio-item"><input type="radio" name="controllerProgrammed"
+                  value="inProgress"><span>In Progress</span></label>
+              <label class="commissioning-radio-item"><input type="radio" name="controllerProgrammed" value="complete"
+                  checked><span>Complete</span></label>
+              <label class="commissioning-radio-item"><input type="radio" name="controllerProgrammed"
+                  value="notApplicable"><span>Not Applicable</span></label>
+            </div>
+          </article>
+
+          <article class="commissioning-premium-row">
+            <div class="controller-status-content">
+              <h4 class="controller-status-name">Ready for Commissioning</h4>
+              <p class="controller-status-note">Network and dependencies resolved.</p>
+            </div>
+            <div class="commissioning-inline-options" role="radiogroup" aria-label="Ready for Commissioning status">
+              <label class="commissioning-radio-item"><input type="radio" name="readyForCommissioning"
+                  value="notStarted"><span>Not Started</span></label>
+              <label class="commissioning-radio-item"><input type="radio" name="readyForCommissioning"
+                  value="inProgress"><span>In Progress</span></label>
+              <label class="commissioning-radio-item"><input type="radio" name="readyForCommissioning" value="complete"
+                  checked><span>Complete</span></label>
+              <label class="commissioning-radio-item"><input type="radio" name="readyForCommissioning"
+                  value="notApplicable"><span>Not Applicable</span></label>
+            </div>
+          </article>
+
+          <article class="commissioning-premium-row">
+            <div class="controller-status-content">
+              <h4 class="controller-status-name">All Points Tested</h4>
+              <p class="controller-status-note">Point-by-point validation complete.</p>
+            </div>
+            <div class="commissioning-inline-options" role="radiogroup" aria-label="All Points Tested status">
+              <label class="commissioning-radio-item"><input type="radio" name="allPointsTested"
+                  value="notStarted"><span>Not Started</span></label>
+              <label class="commissioning-radio-item"><input type="radio" name="allPointsTested"
+                  value="inProgress"><span>In Progress</span></label>
+              <label class="commissioning-radio-item"><input type="radio" name="allPointsTested" value="complete"
+                  checked><span>Complete</span></label>
+              <label class="commissioning-radio-item"><input type="radio" name="allPointsTested"
+                  value="notApplicable"><span>Not Applicable</span></label>
+            </div>
+          </article>
+
+          <article class="commissioning-premium-row">
+            <div class="controller-status-content">
+              <h4 class="controller-status-name">ICN Connected</h4>
+              <p class="controller-status-note">Controller visible on ICN network.</p>
+            </div>
+            <div class="commissioning-inline-options" role="radiogroup" aria-label="ICN Connected status">
+              <label class="commissioning-radio-item"><input type="radio" name="icnConnected"
+                  value="notStarted"><span>Not Started</span></label>
+              <label class="commissioning-radio-item"><input type="radio" name="icnConnected"
+                  value="inProgress"><span>In Progress</span></label>
+              <label class="commissioning-radio-item"><input type="radio" name="icnConnected" value="complete"
+                  checked><span>Complete</span></label>
+              <label class="commissioning-radio-item"><input type="radio" name="icnConnected"
+                  value="notApplicable"><span>Not Applicable</span></label>
+            </div>
+          </article>
+
+          <article class="commissioning-premium-row">
+            <div class="controller-status-content">
+              <h4 class="controller-status-name">Functional Test</h4>
+              <p class="controller-status-note">End-to-end functional sequence verified.</p>
+            </div>
+            <div class="commissioning-inline-options" role="radiogroup" aria-label="Functional Test status">
+              <label class="commissioning-radio-item"><input type="radio" name="functionalTest"
+                  value="notStarted"><span>Not Started</span></label>
+              <label class="commissioning-radio-item"><input type="radio" name="functionalTest"
+                  value="inProgress"><span>In Progress</span></label>
+              <label class="commissioning-radio-item"><input type="radio" name="functionalTest" value="complete"
+                  checked><span>Complete</span></label>
+              <label class="commissioning-radio-item"><input type="radio" name="functionalTest"
+                  value="notApplicable"><span>Not Applicable</span></label>
+            </div>
+          </article>
+        </div>
+
+        <div class="controller-notes-row">
+          <label class="controller-field-label" for="commissionNotes">Commissioning Notes</label>
+          <textarea id="commissionNotes" class="form-control controller-field-input controller-notes-input" rows="3"
+            placeholder="Add notes for handover, blockers, or observations"></textarea>
+        </div>
+      </section>
+
+      <section class="controller-commission-footer">
+        <div class="controller-footer-actions">
+          <button type="button" class="btn btn-default controller-footer-btn">Points</button>
+          <button type="button" class="btn btn-primary controller-footer-btn">
+            <span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span>
+            Save Updates
+          </button>
+          <button type="button" class="btn btn-danger controller-footer-btn">
+            <span class="glyphicon glyphicon-flag" aria-hidden="true"></span>
+            Raise Issue
+          </button>
+        </div>
+      </section>
+
+      <section class="controller-meta-section">
+        <div class="controller-commission-head-row">
+          <h3 class="controller-commission-title">Controller Meta Data</h3>
+          <button type="button" class="btn btn-default controller-footer-btn" id="addMetaDataBtn">Add Meta Data</button>
+        </div>
+        <div id="controllerMetaGrid" class="ag-theme-quartz"></div>
+      </section>
+
+      <section class="controller-issues-section">
+        <div class="controller-commission-head-row">
+          <h3 class="controller-commission-title">Open Issues</h3>
+          <a href="#" class="controller-issue-action">View all issues</a>
+        </div>
+        <div id="commissionIssuesGrid" class="ag-theme-quartz"></div>
+      </section>
+
+      <div class="mt-2 text-sm text-700 page-footer-attribution">© 2026 - SEBA.Net</div>
+    </div>
+  </main>
+
+  <div class="modal fade" id="metaDataDialog" tabindex="-1" role="dialog" aria-labelledby="metaDataDialogLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+              aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="metaDataDialogLabel">Edit Meta Data</h4>
+        </div>
+        <div class="modal-body">
+          <div class="form-group mb-2">
+            <label for="metaControllerName">Controller</label>
+            <input type="text" id="metaControllerName" class="form-control" readonly>
+          </div>
+
+          <div class="form-group mb-2">
+            <label>Field Type</label>
+            <div class="meta-field-mode-row">
+              <label class="meta-field-mode-item">
+                <input type="radio" name="metaFieldMode" id="metaFieldModeExisting" value="existing" checked>
+                <span>Select existing</span>
+              </label>
+              <label class="meta-field-mode-item">
+                <input type="radio" name="metaFieldMode" id="metaFieldModeNew" value="new">
+                <span>Create new</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="form-group mb-2" id="existingMetaTypeWrap">
+            <label for="existingMetaType">Existing Field</label>
+            <select id="existingMetaType" class="form-control">
+              <option value="">Select field</option>
+              <option value="BACnet Instance">BACnet Instance</option>
+              <option value="Network ID">Network ID</option>
+              <option value="Panel Address">Panel Address</option>
+              <option value="Firmware Version">Firmware Version</option>
+              <option value="Install Reference">Install Reference</option>
+            </select>
+          </div>
+
+          <div class="form-group mb-2" id="newMetaTypeWrap" style="display: none;">
+            <label for="newMetaType">New Field Name</label>
+            <input type="text" id="newMetaType" class="form-control" placeholder="Enter new field name">
+          </div>
+
+          <div class="form-group mb-0">
+            <label for="metaDataValue">Meta Data Value</label>
+            <input type="text" id="metaDataValue" class="form-control" placeholder="Enter field value">
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-primary" id="saveMetaDataBtn">Save</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="/js/jquery-3.7.1.min.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/ag-grid-enterprise@32.3.0/dist/ag-grid-enterprise.min.js?t=1733931380679"></script>
+  <script src="ag-grid/agGridSetup.js"></script>
+  <script src="ag-grid/commissionController.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,147 @@
+<header id="mainHeader" class="app-header bg-body">
+    <a href="/" class="header-left-strip text-decoration-none" role="img" aria-label="Go to Home"
+        title="Go to Home">
+        <div class="header-logo-bg"></div>
+    </a>
+    <div class="header-right">
+        <button class="btn btn-outline-secondary d-lg-none" id="toggleSidebar" aria-label="Toggle sidebar"
+            title="Toggle menu">
+            <i class="bi bi-list"></i>
+        </button>
+        <div class="header-title fw-bold" style="font-size: 2rem;">
+            <span class="impact-letter" style="animation-delay: 0.1s">I</span>
+            <span class="impact-letter" style="animation-delay: 0.2s">M</span>
+            <span class="impact-letter" style="animation-delay: 0.3s">P</span>
+            <span class="impact-letter" style="animation-delay: 0.4s">A</span>
+            <span class="impact-letter" style="animation-delay: 0.5s">C</span>
+            <span class="impact-letter" style="animation-delay: 0.6s">T</span>
+        </div>
+        <div class="ms-auto d-flex align-items-center gap-2">
+            <div class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="profileDropdown"
+                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <span class="rounded-circle bg-secondary-subtle text-body-emphasis d-inline-grid"
+                        style="width:32px;height:32px;place-items:center;">U</span>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="profileDropdown">
+                    <li>
+                        <h6 class="dropdown-header">Appearance</h6>
+                    </li>
+                    <li><button class="dropdown-item" type="button" data-bs-theme-value="light">Light</button>
+                    </li>
+                    <li><button class="dropdown-item" type="button" data-bs-theme-value="dark">Dark</button>
+                    </li>
+                    <li><button class="dropdown-item" type="button" data-bs-theme-value="auto">Auto
+                            (Default)</button></li>
+                    <li>
+                        <hr class="dropdown-divider" />
+                    </li>
+                    <li>
+                        <h6 class="dropdown-header">Navigation layout</h6>
+                    </li>
+                    <li><button class="dropdown-item" type="button" data-nav-layout="vertical">Vertical
+                            (Sidebar)</button></li>
+                    <li><button class="dropdown-item" type="button" data-nav-layout="horizontal">Horizontal
+                            (Top)</button></li>
+                    <li>
+                        <hr class="dropdown-divider" />
+                    </li>
+                    <li><button class="dropdown-item" type="button">Profile</button></li>
+                    <li><button class="dropdown-item" type="button">Logout</button></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+
+<nav id="horizontalNav" class="navbar navbar-expand-lg brand-navbar sticky-top">
+    <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#topMenu"
+            aria-controls="topMenu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="topMenu">
+            <ul class="navbar-nav me-auto mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="PointStatusList.html"><i
+                            class="bi bi-pin-map me-2 menu-icon"></i> Points</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="ControllerStatusList.html"><i
+                            class="bi bi-cpu me-2 menu-icon"></i> Controllers</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="IssuesList.html"><i
+                            class="bi bi-exclamation-triangle me-2 menu-icon"></i> Issues</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="ImportFiles.html"><i
+                            class="bi bi-file-earmark-arrow-up me-2 menu-icon"></i> Files</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"><i
+                            class="bi bi-bar-chart me-2 menu-icon"></i> Reports</a>
+                    <ul class="dropdown-menu brand-dropdown">
+                        <li><a class="dropdown-item" href="CommissioningStatusReport.html">IO Point
+                                Commissioning Type A</a></li>
+                        <li><a class="dropdown-item" href="CommissioningStatusReportWithPmd.html">IO Point
+                                Commissioning Type B</a></li>
+                        <li><a class="dropdown-item"
+                                href="Reports/ControllerInstallReport.html">Installation Points List with
+                                Wire Tags</a></li>
+                        <li><a class="dropdown-item" href="Reports/ControllerStatusReport.html">Controller
+                                Status Report</a></li>
+                        <li><a class="dropdown-item" href="ControllerMetaDataReport.html">Controller Meta
+                                Data</a></li>
+                        <li><a class="dropdown-item" href="QRCodes.html">Controller QR Codes</a></li>
+                        <li><a class="dropdown-item" href="Reports/IssuesReport.html">Project Issues</a>
+                        </li>
+                        <li><a class="dropdown-item" href="ControllerPointsOfflineComm.html">Offline
+                                Commissioning Sheet</a></li>
+                        <li><a class="dropdown-item" href="Reports/ControllerPointsReport.html">Controller
+                                Points Export Report</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"><i
+                            class="bi bi-folder me-2 menu-icon"></i> Project</a>
+                    <ul class="dropdown-menu brand-dropdown">
+                        <li><a class="dropdown-item" href="Default.html">Change Project</a></li>
+                        <li><a class="dropdown-item" href="RemoveFromProject.html">Remove me from this
+                                Project</a></li>
+                        <li><a class="dropdown-item" href="ProjectList.html">Projects List</a></li>
+                        <li><a class="dropdown-item" href="ProjectAddEdit.html">Create New Project</a></li>
+                        <li><a class="dropdown-item" href="ProjectDashboard.html">Project Dashboard</a></li>
+                        <li><a class="dropdown-item" href="ProjectUserList.html">Project Members</a></li>
+                        <li><a class="dropdown-item" href="ControllerChangesList.html">Change History</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"><i
+                            class="bi bi-question-circle me-2 menu-icon"></i> Help</a>
+                    <ul class="dropdown-menu brand-dropdown">
+                        <li><a class="dropdown-item"
+                                href="https://schneiderelectric.sharepoint.com/:b:/s/DigitalBuildingsPacificZone/EZIyNNJga_NKuHu8CuhUykIBxtE7fz06u7YJjT_RmH3Agg?e=uFUqwP"
+                                target="_blank">Installers Guide</a></li>
+                        <li><a class="dropdown-item"
+                                href="https://schneiderelectric.sharepoint.com/:b:/s/DigitalBuildingsPacificZone/EWXBl6uFRNRDsODbGxfKwUwBa1nMA_7JJj7ixkebrIRyYg?e=ph9weM"
+                                target="_blank">Commissioning Guide</a></li>
+                        <li><a class="dropdown-item"
+                                href="https://schneiderelectric.sharepoint.com/:b:/s/DigitalBuildingsPacificZone/Eb4xtDPEkHVFin7eCegHu8QBGpmtR0-MUo6qkQLKM40cbw?e=kMRZrK"
+                                target="_blank">Project Administrators Guide</a></li>
+                        <li><a class="dropdown-item"
+                                href="https://schneiderelectric.sharepoint.com/:b:/s/DigitalBuildingsPacificZone/ET9GkJ9M9BxHrkPVckLZal8BteoplUybuni7d7nz4Cbvvw?e=oKKeYO"
+                                target="_blank">Set up Teams Notifications</a></li>
+                        <li><a class="dropdown-item"
+                                href="https://schneiderelectric.sharepoint.com/:b:/r/sites/DigitalBuildingsPacificZone/Main%20Site%20Documents/Systems/EEP/EEP%20Standards%20PUBLIC/EEPS07_160329_Installation%20Standards%20R2.2_dl.pdf?csf=1&amp;web=1&amp;e=ntsdiT"
+                                target="_blank">Installation Standards</a></li>
+                        <li><a class="dropdown-item"
+                                href="https://schneiderelectric.sharepoint.com/sites/DigitalBuildingsPacificZone/SitePages/Tools_IMPACT.aspx"
+                                target="_blank">IMPACT on Share Point</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

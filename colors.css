@@ -1,0 +1,121 @@
+/* ============================================================
+   Impact Design System — Color Tokens
+   All color values for the project are defined here as CSS
+   custom properties. Import this file before style.css.
+   ============================================================ */
+
+:root {
+  /* White & Black */
+  --c-white:                    #ffffff;
+  --c-black-soft:               #112233;
+
+  /* Primary (green brand) */
+  --c-primary:                  #3dcd58;
+  --c-primary-dark:             #30ac47;
+  --c-primary-darker:           #2a8a3c;
+  --c-primary-darkest:          #16a34a;
+  --c-primary-bg:               #f0fdf4;
+  --c-primary-bg-active:        #f6fef8;
+  --c-primary-bg-light:         #ecfdf5;
+  --c-primary-border:           #bbf7d0;
+  --c-primary-border-light:     #86efac;
+  --c-primary-border-bright:    #6bfd9e;
+
+  /* Green */
+  --c-green-700:                #15803d;
+  --c-green-800:                #166534;
+  --c-green-500:                #22c55e;
+  --c-green-100:                #dcfce7;
+  --c-teal-900:                 #0c4a6e;
+
+  /* Sky / Light-blue */
+  --c-sky-400:                  #38bdf8;
+  --c-sky-500:                  #0ea5e9;
+  --c-sky-600:                  #0284c7;
+  --c-sky-700:                  #0369a1;
+  --c-sky-bg:                   #f0f9ff;
+  --c-sky-bg-light:             #e0f2fe;
+  --c-sky-border:               #bae6fd;
+  --c-sky-border-light:         #7dd3fc;
+
+  /* Cyan */
+  --c-cyan-400:                 #22d3ee;
+  --c-cyan-bg:                  #ecfeff;
+
+  /* Blue */
+  --c-blue-500:                 #3b82f6;
+  --c-blue-700:                 #1e40af;
+  --c-blue-border:              #dbeafe;
+  --c-blue-border-light:        #61a1f0;
+  --c-link:                     #337ab7;
+  --c-blue-dark:                #1d4ed8;
+
+  /* Red */
+  --c-red-500:                  #ef4444;
+  --c-red-600:                  #b91c1c;
+  --c-red-700:                  #991b1b;
+  --c-red-bg:                   #fee2e2;
+  --c-red-bg-light:             #fef2f2;
+  --c-red-bg-lightest:          #fff1f2;
+  --c-red-border:               #fecaca;
+
+  /* Yellow / Amber */
+  --c-yellow-bg:                #fef9c3;
+  --c-yellow-border:            #fde68a;
+  --c-yellow-800:               #854d0e;
+
+  /* Slate */
+  --c-slate-900:                #0f172a;
+  --c-slate-800:                #1e293b;
+  --c-slate-700:                #334155;
+  --c-slate-600:                #475569;
+  --c-slate-500:                #64748b;
+  --c-slate-400:                #94a3b8;
+  --c-slate-300:                #cbd5e1;
+  --c-slate-200:                #e2e8f0;
+  --c-slate-100:                #f1f5f9;
+  --c-slate-50:                 #f8fafc;
+
+  /* Gray (Tailwind gray scale) */
+  --c-gray-900:                 #1f2937;
+  --c-gray-800:                 #374151;
+  --c-gray-700:                 #4b5563;
+  --c-gray-600:                 #333333;
+  --c-gray-500:                 #666666;
+  --c-gray-400:                 #9ca3af;
+  --c-gray-300:                 #e5e7eb;
+  --c-gray-200:                 #e8eef1;
+  --c-gray-150:                 #dbe5ef;
+  --c-gray-140:                 #dbe4ee;
+  --c-gray-100:                 #f3f4f6;
+  --c-gray-50:                  #f9fafb;
+  --c-gray-30:                  #fafafa;
+  --c-gray-20:                  #fafbfc;
+
+  /* Silver / Neutral */
+  --c-silver:                   #dddddd;
+  --c-silver-light:             #bebebe;
+  --c-silver-bg:                #f5f5f5;
+
+  /* Misc named */
+  --c-eef2f7:                   #eef2f7;
+  --c-eff6ff:                   #eff6ff;
+  --c-999:                      #999999;
+
+  /* rgba — overlays & shadows */
+  --c-rgba-black-002:           rgba(0, 0, 0, 0.02);
+  --c-rgba-black-003:           rgba(0, 0, 0, 0.03);
+  --c-rgba-black-008:           rgba(0, 0, 0, 0.075);
+  --c-rgba-black-008b:          rgba(0, 0, 0, 0.08);
+  --c-rgba-black-010:           rgba(0, 0, 0, 0.1);
+  --c-rgba-black-012:           rgba(0, 0, 0, 0.12);
+  --c-rgba-navy-005:            rgba(0, 0, 50, 0.05);
+  --c-rgba-slate-008:           rgba(15, 23, 42, 0.08);
+  --c-rgba-green-dark-018:      rgba(22, 101, 52, 0.18);
+  --c-rgba-red-015:             rgba(239, 68, 68, 0.15);
+  --c-rgba-primary-dark-040:    rgba(48, 172, 71, 0.4);
+  --c-rgba-primary-005:         rgba(61, 205, 88, 0.05);
+  --c-rgba-primary-010:         rgba(61, 205, 88, 0.1);
+  --c-rgba-primary-015:         rgba(61, 205, 88, 0.15);
+  --c-rgba-primary-030:         rgba(61, 205, 88, 0.3);
+}

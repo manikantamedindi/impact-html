@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>Impact : Project User List</title>
+  <link rel="stylesheet" href="https://unpkg.com/primeflex@3.3.1/primeflex.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/primeflex.css">
+  <link rel="stylesheet" href="/scss/style.css">
+  <style></style>
+</head>
+
+<body class="home-page project-list-page bg-default">
+  <nav class="navbar rounded-0 mb-0 border-none z-100" id="navbarMain">
+    <div class="body-container flex justify-content-between w-full align-items-center">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+          data-target="#bs-example-navbar-collapse-1" aria-expanded="false" title="Open Menu">
+          <span class="sr-only">Toggle navigation</span>
+          <img src="img/menu-bar.svg" alt="menu" class="w-2rem">
+        </button>
+        <a class="navbar-brand py-2 pl-0" href="/">
+          <img src="img/Logo.svg" alt="Logo" class="w-18rem">
+        </a>
+        <p class="navbar-text">
+          <a href="/" class="navbar-link text-decoration flex align-items-center"
+            style="white-space: nowrap; gap: 8px;">
+            <span class="font-bold project-brand-text">A3-00001234</span>
+            <span class="font-bold project-brand-text">IMPACT DEMO</span>
+            <!-- <img src="img/impact-image.svg" alt="IMPACT" class="w-10rem"> -->
+          </a>
+        </p>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse w-full" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li><a href="PointStatusList.html">Points</a></li>
+          <li><a href="ControllerStatusList.html">Controllers</a></li>
+          <li><a href="IssuesList.html">Issues</a></li>
+          <li><a href="ImportFiles.html">Files</a></li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Reports <span
+                class="glyphicon glyphicon-chevron-down navbar-dropdown-icon" aria-hidden="true"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="CommissioningStatusReport.html">IO Point Commissioning Type A</a></li>
+              <li><a href="CommissioningStatusReportWithPmd.html">IO Point Commissioning Type B</a>
+              </li>
+              <li><a href="Reports/ControllerInstallReport.html">Installation Points List with Wire
+                  Tags</a></li>
+              <li><a href="Reports/ControllerStatusReport.html">Controller Status Report</a></li>
+              <li><a href="ControllerMetaDataReport.html">Controller Meta Data</a></li>
+              <li><a href="QRCodes.html">Controller QR Codes</a></li>
+              <li><a href="Reports/IssuesReport.html">Project Issues</a></li>
+              <li><a href="ControllerPointsOfflineComm.html">Offline Commissioning Sheet</a></li>
+              <li><a href="Reports/ControllerPointsReport.html">Controller Points Export Report</a>
+              </li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Project <span
+                class="glyphicon glyphicon-chevron-down navbar-dropdown-icon" aria-hidden="true"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="Default.html">Change Project</a></li>
+              <li><a href="RemoveFromProject.html">Remove me from this Project</a></li>
+              <li><a href="ProjectList.html">Projects List</a></li>
+              <li><a href="ProjectAddEdit.html">Create New Project</a></li>
+              <li><a href="ProjectDashboard.html">Project Dashboard</a></li>
+              <li><a href="ProjectUserList.html">Project Members</a></li>
+              <li><a href="ControllerChangesList.html">Change History</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Help <span
+                class="glyphicon glyphicon-chevron-down navbar-dropdown-icon" aria-hidden="true"></span></a>
+            <ul class="dropdown-menu">
+              <li><a
+                  href="https://schneiderelectric.sharepoint.com/:b:/s/DigitalBuildingsPacificZone/EZIyNNJga_NKuHu8CuhUykIBxtE7fz06u7YJjT_RmH3Agg?e=uFUqwP"
+                  target="_blank">Installers Guide</a></li>
+              <li><a
+                  href="https://schneiderelectric.sharepoint.com/:b:/s/DigitalBuildingsPacificZone/EWXBl6uFRNRDsODbGxfKwUwBa1nMA_7JJj7ixkebrIRyYg?e=ph9weM"
+                  target="_blank">Commissioning Guide</a></li>
+              <li><a
+                  href="https://schneiderelectric.sharepoint.com/:b:/s/DigitalBuildingsPacificZone/Eb4xtDPEkHVFin7eCegHu8QBGpmtR0-MUo6qkQLKM40cbw?e=kMRZrK"
+                  target="_blank">Project Administrators Guide</a></li>
+              <li><a
+                  href="https://schneiderelectric.sharepoint.com/:b:/s/DigitalBuildingsPacificZone/ET9GkJ9M9BxHrkPVckLZal8BteoplUybuni7d7nz4Cbvvw?e=oKKeYO"
+                  target="_blank">Set up Teams Notifications</a></li>
+              <li><a
+                  href="https://schneiderelectric.sharepoint.com/:b:/r/sites/DigitalBuildingsPacificZone/Main%20Site%20Documents/Systems/EEP/EEP%20Standards%20PUBLIC/EEPS07_160329_Installation%20Standards%20R2.2_dl.pdf?csf=1&amp;web=1&amp;e=ntsdiT"
+                  target="_blank">Installation Standards</a></li>
+              <li><a
+                  href="https://schneiderelectric.sharepoint.com/sites/DigitalBuildingsPacificZone/SitePages/Tools_IMPACT.aspx"
+                  target="_blank">IMPACT on Share Point</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <ul class="nav navbar-nav navbar-right w-auto">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle flex align-items-center gap-2 py-2" data-toggle="dropdown" role="button"
+            aria-haspopup="true" aria-expanded="false">
+
+            <img src="/img/profile.svg" alt="" class="img-responsive w-3rem border-circle" title="User Profile">
+
+            <span>
+              <span style="white-space: nowrap; display: block;">John Doe</span>
+              <span style="white-space: nowrap; display: block;">Global Leader</span>
+            </span>
+
+            <span class="glyphicon glyphicon-chevron-down navbar-dropdown-icon" aria-hidden="true"></span>
+          </a>
+          <ul class="dropdown-menu profile-dropdown-menu">
+            <li><span class="profile-dropdown-header">Appearance</span></li>
+            <li><a href="#" class="profile-dropdown-item">Light</a></li>
+            <li><a href="#" class="profile-dropdown-item">Dark</a></li>
+            <li><a href="#" class="profile-dropdown-item">Auto (Default)</a></li>
+
+            <li class="profile-dropdown-divider"></li>
+
+            <li><span class="profile-dropdown-header">Navigation layout</span></li>
+            <li><a href="#" class="profile-dropdown-item">Vertical (Sidebar)</a></li>
+            <li><a href="#" class="profile-dropdown-item">Horizontal (Top)</a></li>
+
+            <li class="profile-dropdown-divider"></li>
+
+            <li><a href="#" class="profile-dropdown-item">Profile</a></li>
+            <li><a href="/UserAccount/Logout" class="profile-dropdown-item">Logout</a></li>
+          </ul>
+        </li>
+      </ul>
+      <!-- /.navbar-collapse -->
+    </div>
+  </nav>
+
+    <main class="main bg-default sister-technology-page">
+      <div class="body-container">
+        <div class="breadcrumb-wrapper">
+          <h2 class="breadcrumb-title">
+            <span class="glyphicon glyphicon-user breadcrumb-title-icon" aria-hidden="true"></span>
+            Project User List
+          </h2>
+          <div class="breadcrumb-group">
+            <a href="index.html" class="breadcrumb-item">Dashboard</a>
+            <span class="breadcrumb-separator">/</span>
+            <span class="breadcrumb-current">Project User List</span>
+          </div>
+        </div>
+
+        
+      <div class="filters-navbar issues-list-filters-navbar">
+        <div class="row p-0 m-0">
+          <div class="col-md-3  pl-0">
+            <div class="filters-wrapper">
+              <div class="search-filter">
+                <svg class="search-filter-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+                <input type="text" placeholder="Search Users..." class="search-filter-input" />
+              </div>
+            </div>
+          </div>
+          <div class="col-md-9 pr-0">
+            <div class="filters-wrapper flex justify-content-end align-items-center gap-3">
+              <div class="dropdown-filter">
+                <select id="select-filter" class="form-control"
+                  aria-label="Filter by assigned to">
+                   <option value="all" selected>All Users</option>
+                  <option value="current">Current Project Member</option>
+                </select>
+              </div>
+              <div class="filter-action-buttons">
+                <a href="UserCreate.html" class="btn btn-success fiter-button">
+                  <img src="/assets/icons/plus.svg" class="filter-button-icon" alt="upload icon">
+                  Create User
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+        <div id="projectUsersGrid" class="ag-theme-quartz ag-grid-responsive-height"></div>
+
+        <div class="mt-2 text-sm text-700 page-footer-attribution">© 2026 - SEBA.Net</div>
+      </div>
+    </main>
+
+  <script src="/js/jquery-3.7.1.min.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/ag-grid-enterprise@32.3.0/dist/ag-grid-enterprise.min.js?t=1733931380679"></script>
+  <script src="ag-grid/agGridSetup.js"></script>
+  <script src="ag-grid/projectUserList.js"></script>
+</body>
+
+</html>

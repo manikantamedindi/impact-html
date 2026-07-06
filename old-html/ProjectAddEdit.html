@@ -1,0 +1,601 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>Impact : Add Project</title>
+  <link rel="stylesheet" href="https://unpkg.com/primeflex@3.3.1/primeflex.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/primeflex.css">
+  <link rel="stylesheet" href="/scss/style.css">
+
+</head>
+
+<body class="home-page  bg-default">
+
+  <!-- ════════════════ NAVBAR ════════════════ -->
+  <nav class="navbar rounded-0 mb-0 border-none z-100" id="navbarMain">
+    <div class="body-container flex justify-content-between w-full align-items-center">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+          data-target="#bs-example-navbar-collapse-1" aria-expanded="false" title="Open Menu">
+          <span class="sr-only">Toggle navigation</span>
+          <img src="img/menu-bar.svg" alt="menu" class="w-2rem">
+        </button>
+        <a class="navbar-brand py-2 pl-0" href="/"><img src="img/Logo.svg" alt="Logo" class="w-18rem"></a>
+        <p class="navbar-text">
+          <a href="/" class="navbar-link text-decoration flex align-items-center" style="white-space:nowrap;gap:8px;">
+            <span class="font-bold project-brand-text">A3-00001234</span>
+            <span class="font-bold project-brand-text">IMPACT DEMO</span>
+          </a>
+        </p>
+      </div>
+      <div class="collapse navbar-collapse w-full" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li><a href="PointStatusList.html">Points</a></li>
+          <li><a href="ControllerStatusList.html">Controllers</a></li>
+          <li><a href="IssuesList.html">Issues</a></li>
+          <li><a href="ImportFiles.html">Files</a></li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Reports <span
+                class="glyphicon glyphicon-chevron-down navbar-dropdown-icon"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="CommissioningStatusReport.html">IO Point Commissioning Type A</a></li>
+              <li><a href="CommissioningStatusReportWithPmd.html">IO Point Commissioning Type B</a></li>
+              <li><a href="Reports/ControllerInstallReport.html">Installation Points List with Wire Tags</a></li>
+              <li><a href="Reports/ControllerStatusReport.html">Controller Status Report</a></li>
+              <li><a href="ControllerMetaDataReport.html">Controller Meta Data</a></li>
+              <li><a href="QRCodes.html">Controller QR Codes</a></li>
+              <li><a href="Reports/IssuesReport.html">Project Issues</a></li>
+              <li><a href="ControllerPointsOfflineComm.html">Offline Commissioning Sheet</a></li>
+              <li><a href="Reports/ControllerPointsReport.html">Controller Points Export Report</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Project <span
+                class="glyphicon glyphicon-chevron-down navbar-dropdown-icon"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="Default.html">Change Project</a></li>
+              <li><a href="RemoveFromProject.html">Remove me from this Project</a></li>
+              <li><a href="ProjectList.html">Projects List</a></li>
+              <li><a href="ProjectAddEdit.html">Create New Project</a></li>
+              <li><a href="ProjectDashboard.html">Project Dashboard</a></li>
+              <li><a href="ProjectUserList.html">Project Members</a></li>
+              <li><a href="ControllerChangesList.html">Change History</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Help <span
+                class="glyphicon glyphicon-chevron-down navbar-dropdown-icon"></span></a>
+            <ul class="dropdown-menu">
+              <li><a
+                  href="https://schneiderelectric.sharepoint.com/:b:/s/DigitalBuildingsPacificZone/EZIyNNJga_NKuHu8CuhUykIBxtE7fz06u7YJjT_RmH3Agg?e=uFUqwP"
+                  target="_blank">Installers Guide</a></li>
+              <li><a
+                  href="https://schneiderelectric.sharepoint.com/:b:/s/DigitalBuildingsPacificZone/EWXBl6uFRNRDsODbGxfKwUwBa1nMA_7JJj7ixkebrIRyYg?e=ph9weM"
+                  target="_blank">Commissioning Guide</a></li>
+              <li><a
+                  href="https://schneiderelectric.sharepoint.com/:b:/s/DigitalBuildingsPacificZone/Eb4xtDPEkHVFin7eCegHu8QBGpmtR0-MUo6qkQLKM40cbw?e=kMRZrK"
+                  target="_blank">Project Administrators Guide</a></li>
+              <li><a
+                  href="https://schneiderelectric.sharepoint.com/:b:/s/DigitalBuildingsPacificZone/ET9GkJ9M9BxHrkPVckLZal8BteoplUybuni7d7nz4Cbvvw?e=oKKeYO"
+                  target="_blank">Set up Teams Notifications</a></li>
+              <li><a
+                  href="https://schneiderelectric.sharepoint.com/:b:/r/sites/DigitalBuildingsPacificZone/Main%20Site%20Documents/Systems/EEP/EEP%20Standards%20PUBLIC/EEPS07_160329_Installation%20Standards%20R2.2_dl.pdf?csf=1&amp;web=1&amp;e=ntsdiT"
+                  target="_blank">Installation Standards</a></li>
+              <li><a
+                  href="https://schneiderelectric.sharepoint.com/sites/DigitalBuildingsPacificZone/SitePages/Tools_IMPACT.aspx"
+                  target="_blank">IMPACT on Share Point</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <ul class="nav navbar-nav navbar-right w-auto">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle flex align-items-center gap-2 py-2" data-toggle="dropdown" role="button"
+            aria-haspopup="true" aria-expanded="false">
+            <img src="/img/profile.svg" alt="" class="img-responsive w-3rem border-circle" title="User Profile">
+            <span>
+              <span style="white-space:nowrap;display:block;">John Doe</span>
+              <span style="white-space:nowrap;display:block;">Global Leader</span>
+            </span>
+            <span class="glyphicon glyphicon-chevron-down navbar-dropdown-icon"></span>
+          </a>
+          <ul class="dropdown-menu profile-dropdown-menu">
+            <li><span class="profile-dropdown-header">Appearance</span></li>
+            <li><a href="#" class="profile-dropdown-item">Light</a></li>
+            <li><a href="#" class="profile-dropdown-item">Dark</a></li>
+            <li><a href="#" class="profile-dropdown-item">Auto (Default)</a></li>
+            <li class="profile-dropdown-divider"></li>
+            <li><span class="profile-dropdown-header">Navigation layout</span></li>
+            <li><a href="#" class="profile-dropdown-item">Vertical (Sidebar)</a></li>
+            <li><a href="#" class="profile-dropdown-item">Horizontal (Top)</a></li>
+            <li class="profile-dropdown-divider"></li>
+            <li><a href="#" class="profile-dropdown-item">Profile</a></li>
+            <li><a href="/UserAccount/Logout" class="profile-dropdown-item">Logout</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ════════════════ MAIN ════════════════ -->
+  <main class="main bg-default project-add-edit-page">
+    <div class="body-container">
+      <div class="page-content-wrapper">
+
+        <!-- Breadcrumb -->
+        <div class="breadcrumb-wrapper">
+          <h2 class="breadcrumb-title">
+            <span class="glyphicon glyphicon-plus breadcrumb-title-icon" aria-hidden="true"></span>
+            Add New Project
+          </h2>
+          <div class="breadcrumb-group">
+            <a href="index.html" class="breadcrumb-item">Dashboard</a>
+            <span class="breadcrumb-separator">/</span>
+            <a href="ProjectList.html" class="breadcrumb-item">Project List</a>
+            <span class="breadcrumb-separator">/</span>
+            <span class="breadcrumb-current">Add Project</span>
+          </div>
+        </div>
+
+        <section class="project-add-page">
+          <form id="projectForm">
+
+            <!-- ══════════════════════════════════════════
+               TAB NAVIGATION
+          ══════════════════════════════════════════ -->
+            <div class="tab-nav" role="tablist">
+
+              <button type="button" class="tab-btn active" id="tab1" role="tab" aria-controls="panel1"
+                aria-selected="true" onclick="switchTab(1)">
+                <div class="tab-badge">1</div>
+                <span class="tab-label">Project Details</span>
+                <span class="tab-sublabel">Name &amp; dates</span>
+              </button>
+
+              <button type="button" class="tab-btn locked" id="tab2" role="tab" aria-controls="panel2"
+                aria-selected="false" onclick="switchTab(2)">
+                <svg class="tab-lock-icon" xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24"
+                  fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                  <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                </svg>
+                <div class="tab-badge">2</div>
+                <span class="tab-label">Controller Headings</span>
+                <span class="tab-sublabel">Heading labels</span>
+              </button>
+
+              <button type="button" class="tab-btn locked" id="tab3" role="tab" aria-controls="panel3"
+                aria-selected="false" onclick="switchTab(3)">
+                <svg class="tab-lock-icon" xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24"
+                  fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                  <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                </svg>
+                <div class="tab-badge">3</div>
+                <span class="tab-label">Low Level Points</span>
+                <span class="tab-sublabel">IO point settings</span>
+              </button>
+
+              <button type="button" class="tab-btn locked" id="tab4" role="tab" aria-controls="panel4"
+                aria-selected="false" onclick="switchTab(4)">
+                <svg class="tab-lock-icon" xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24"
+                  fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                  <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                </svg>
+                <div class="tab-badge">4</div>
+                <span class="tab-label">High Level Points</span>
+                <span class="tab-sublabel">Point settings</span>
+              </button>
+
+              <button type="button" class="tab-btn locked" id="tab5" role="tab" aria-controls="panel5"
+                aria-selected="false" onclick="switchTab(5)">
+                <svg class="tab-lock-icon" xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24"
+                  fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                  <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                </svg>
+                <div class="tab-badge">5</div>
+                <span class="tab-label">Teams Setup</span>
+                <span class="tab-sublabel">Notifications</span>
+              </button>
+
+            </div><!-- /.tab-nav -->
+
+            <!-- ══════════════════════════════════════════
+               TAB PANELS
+          ══════════════════════════════════════════ -->
+            <div class="tab-panels">
+
+              <!-- PANEL 1 — Project Details -->
+              <div class="tab-panel active" id="panel1" role="tabpanel" aria-labelledby="tab1">
+
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="projectName">Project Name <span class="required-indicator">*</span></label>
+                    <input type="text" id="projectName" name="projectName" placeholder="Enter project name">
+                  </div>
+                  <div class="form-group">
+                    <label for="projectNumber">Project Number <span class="required-indicator">*</span></label>
+                    <input type="text" id="projectNumber" name="projectNumber" placeholder="Enter project number">
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="projectDescription">Project Description</label>
+                  <textarea id="projectDescription" name="projectDescription"
+                    placeholder="Enter project description"></textarea>
+                </div>
+
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="projectManager">Project Manager <span class="required-indicator">*</span></label>
+                    <select id="projectManager" name="projectManager">
+                      <option value="">Select Project Manager</option>
+                      <option value="john-doe">John Doe</option>
+                      <option value="jane-smith">Jane Smith</option>
+                      <option value="bob-johnson">Bob Johnson</option>
+                      <option value="alice-williams">Alice Williams</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="projectState">State <span class="required-indicator">*</span></label>
+                    <select id="projectState" name="projectState">
+                      <option value="">Select State</option>
+                      <option value="planning">Planning</option>
+                      <option value="active">Active</option>
+                      <option value="on-hold">On Hold</option>
+                      <option value="completed">Completed</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="form-row-3">
+                  <div class="form-group">
+                    <label for="installationStartDate">Installation Start Date <span
+                        class="required-indicator">*</span></label>
+                    <input type="date" id="installationStartDate" name="installationStartDate">
+                  </div>
+                  <div class="form-group">
+                    <label for="commissioningEndDate">Commissioning End Date <span
+                        class="required-indicator">*</span></label>
+                    <input type="date" id="commissioningEndDate" name="commissioningEndDate">
+                  </div>
+                  <div class="form-group">
+                    <label for="projectStatus">Project Status <span class="required-indicator">*</span></label>
+                    <select id="projectStatus" name="projectStatus">
+                      <option value="">Select Project Status</option>
+                      <option value="draft">Draft</option>
+                      <option value="in-progress">In Progress</option>
+                      <option value="on-track">On Track</option>
+                      <option value="at-risk">At Risk</option>
+                      <option value="closed">Closed</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="checkbox-group">
+                  <input type="checkbox" id="projectAdmin" name="projectAdmin">
+                  <label for="projectAdmin">Add me as the Project Administrator</label>
+                </div>
+
+                <div class="panel-footer">
+                  <button type="button" class="btn-next-section" onclick="goNext(1)">
+                    Next
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="9 18 15 12 9 6"></polyline>
+                    </svg>
+                  </button>
+                </div>
+
+              </div><!-- /#panel1 -->
+
+              <!-- PANEL 2 — Controller Headings -->
+              <div class="tab-panel" id="panel2" role="tabpanel" aria-labelledby="tab2">
+
+                <div class="locked-notice" id="notice2">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                    <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                  </svg>
+                  These fields are available after the project is created.
+                </div>
+                <div class="section-fields locked">
+                  <div class="form-row">
+                    <div class="form-group"><label>Controller Heading 1</label><input type="text"
+                        placeholder="e.g. Location" disabled></div>
+                    <div class="form-group"><label>Controller Heading 2</label><input type="text"
+                        placeholder="e.g. Floor" disabled></div>
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group"><label>Controller Heading 3</label><input type="text"
+                        placeholder="e.g. Zone" disabled></div>
+                    <div class="form-group"><label>Controller Heading 4</label><input type="text"
+                        placeholder="e.g. Panel" disabled></div>
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group"><label>Controller Heading 5</label><input type="text"
+                        placeholder="e.g. Area" disabled></div>
+                    <div class="form-group"><label>Controller Heading 6</label><input type="text"
+                        placeholder="e.g. Sub-Area" disabled></div>
+                  </div>
+                </div>
+
+                <div class="panel-footer">
+                  <button type="button" id="nextBtn2" class="btn-next-section" onclick="goNext(2)" disabled>
+                    Next
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="9 18 15 12 9 6"></polyline>
+                    </svg>
+                  </button>
+                </div>
+
+              </div><!-- /#panel2 -->
+
+              <!-- PANEL 3 — Low Level Points -->
+              <div class="tab-panel" id="panel3" role="tabpanel" aria-labelledby="tab3">
+
+                <div class="locked-notice" id="notice3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                    <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                  </svg>
+                  These fields are available after the project is created.
+                </div>
+                <div class="section-fields locked">
+                  <div class="form-row">
+                    <div class="form-group"><label>Point Type Label</label><input type="text"
+                        placeholder="e.g. Digital Input" disabled></div>
+                    <div class="form-group"><label>Point Abbreviation</label><input type="text" placeholder="e.g. DI"
+                        disabled></div>
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group"><label>Default Unit</label><select disabled>
+                        <option>Select unit</option>
+                      </select></div>
+                    <div class="form-group"><label>Scaling Factor</label><input type="number" placeholder="e.g. 1.0"
+                        disabled></div>
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group"><label>Min Value</label><input type="number" placeholder="e.g. 0" disabled>
+                    </div>
+                    <div class="form-group"><label>Max Value</label><input type="number" placeholder="e.g. 100"
+                        disabled></div>
+                  </div>
+                  <div class="form-group"><label>Notes</label><textarea placeholder="Low level point notes..."
+                      disabled></textarea></div>
+                </div>
+
+                <div class="panel-footer">
+                  <button type="button" id="nextBtn3" class="btn-next-section" onclick="goNext(3)" disabled>
+                    Next
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="9 18 15 12 9 6"></polyline>
+                    </svg>
+                  </button>
+                </div>
+
+              </div><!-- /#panel3 -->
+
+              <!-- PANEL 4 — High Level Points -->
+              <div class="tab-panel" id="panel4" role="tabpanel" aria-labelledby="tab4">
+
+                <div class="locked-notice" id="notice4">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                    <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                  </svg>
+                  These fields are available after the project is created.
+                </div>
+                <div class="section-fields locked">
+                  <div class="form-row">
+                    <div class="form-group"><label>Point Type Label</label><input type="text"
+                        placeholder="e.g. Analog Output" disabled></div>
+                    <div class="form-group"><label>Point Abbreviation</label><input type="text" placeholder="e.g. AO"
+                        disabled></div>
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group"><label>Default Unit</label><select disabled>
+                        <option>Select unit</option>
+                      </select></div>
+                    <div class="form-group"><label>Scaling Factor</label><input type="number" placeholder="e.g. 1.0"
+                        disabled></div>
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group"><label>Min Value</label><input type="number" placeholder="e.g. 0" disabled>
+                    </div>
+                    <div class="form-group"><label>Max Value</label><input type="number" placeholder="e.g. 100"
+                        disabled></div>
+                  </div>
+                  <div class="form-group"><label>Notes</label><textarea placeholder="High level point notes..."
+                      disabled></textarea></div>
+                </div>
+
+                <div class="panel-footer">
+                  <button type="button" id="nextBtn4" class="btn-next-section" onclick="goNext(4)" disabled>
+                    Next
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="9 18 15 12 9 6"></polyline>
+                    </svg>
+                  </button>
+                </div>
+
+              </div><!-- /#panel4 -->
+
+              <!-- PANEL 5 — Teams Setup -->
+              <div class="tab-panel" id="panel5" role="tabpanel" aria-labelledby="tab5">
+
+                <div class="locked-notice" id="notice5">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                    <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                  </svg>
+                  These fields are available after the project is created.
+                </div>
+                <div class="section-fields locked">
+                  <div class="form-row">
+                    <div class="form-group"><label>Teams Channel Name</label><input type="text"
+                        placeholder="e.g. Project Alerts" disabled></div>
+                    <div class="form-group"><label>Webhook URL</label><input type="url"
+                        placeholder="https://outlook.office.com/webhook/..." disabled></div>
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group">
+                      <label>Notification Trigger</label>
+                      <select disabled>
+                        <option>Select trigger</option>
+                        <option>Issue Created</option>
+                        <option>Status Changed</option>
+                        <option>Point Commissioned</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label>Alert Level</label>
+                      <select disabled>
+                        <option>Select level</option>
+                        <option>Info</option>
+                        <option>Warning</option>
+                        <option>Critical</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-group"><label>Message Template</label><textarea
+                      placeholder="Custom notification message template..." disabled></textarea></div>
+                  <div class="checkbox-group">
+                    <input type="checkbox" disabled>
+                    <label>Enable Teams notifications for this project</label>
+                  </div>
+                </div>
+
+                <div class="panel-footer">
+                  <button type="button" class="btn-cancel" onclick="history.back()">Cancel</button>
+                  <button type="submit" id="btnSave" class="btn-next-section" disabled>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                    Save Project
+                  </button>
+                </div>
+
+              </div><!-- /#panel5 -->
+
+            </div><!-- /.tab-panels -->
+
+          </form>
+        </section>
+
+        <div class="mt-2 text-sm text-700 page-footer-attribution">© 2026 - SEBA.Net</div>
+      </div><!-- /.page-content-wrapper -->
+    </div><!-- /.body-container -->
+  </main>
+
+  <script src="/js/jquery-3.7.1.min.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+  <script>
+    // Required fields for tab 1
+    const REQUIRED = ['projectName', 'projectNumber', 'projectManager', 'projectState',
+      'installationStartDate', 'commissioningEndDate', 'projectStatus'];
+
+    // tabs that have been unlocked (1 is always unlocked)
+    const unlockedTabs = new Set([1]);
+
+    /* Switch to a tab by number — only if unlocked */
+    function switchTab(num) {
+      if (!unlockedTabs.has(num)) return;
+
+      // deactivate all tabs & panels
+      document.querySelectorAll('.tab-btn').forEach(function (btn) {
+        btn.classList.remove('active');
+        btn.setAttribute('aria-selected', 'false');
+      });
+      document.querySelectorAll('.tab-panel').forEach(function (p) {
+        p.classList.remove('active');
+      });
+
+      // activate chosen tab & panel
+      document.getElementById('tab' + num).classList.add('active');
+      document.getElementById('tab' + num).setAttribute('aria-selected', 'true');
+      document.getElementById('panel' + num).classList.add('active');
+    }
+
+    /* Called by every Next button */
+    function goNext(fromTabNum) {
+      // Validate tab 1 required fields
+      if (fromTabNum === 1) {
+        const missing = REQUIRED.filter(function (id) {
+          return !document.getElementById(id).value.trim();
+        });
+        if (missing.length > 0) {
+          missing.forEach(function (id) {
+            const el = document.getElementById(id);
+            el.style.borderColor = 'var(--red-700)';
+            el.style.boxShadow = '0 0 0 3px rgba(185,28,28,0.1)';
+          });
+          return;
+        }
+      }
+
+      const nextTabNum = fromTabNum + 1;
+      if (nextTabNum > 5) return;
+
+      // Unlock next tab
+      unlockedTabs.add(nextTabNum);
+      const nextTabBtn = document.getElementById('tab' + nextTabNum);
+      nextTabBtn.classList.remove('locked');
+      // remove the lock icon
+      const lockIcon = nextTabBtn.querySelector('.tab-lock-icon');
+      if (lockIcon) lockIcon.remove();
+
+      // Enable that tab's own Next/Save button
+      const btnMap = { 2: 'nextBtn2', 3: 'nextBtn3', 4: 'nextBtn4', 5: 'btnSave' };
+      if (btnMap[nextTabNum]) {
+        document.getElementById(btnMap[nextTabNum]).disabled = false;
+      }
+
+      switchTab(nextTabNum);
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    // Clear red error highlight on input/change
+    REQUIRED.forEach(function (id) {
+      const el = document.getElementById(id);
+      if (!el) return;
+      ['input', 'change'].forEach(function (evt) {
+        el.addEventListener(evt, function () {
+          this.style.borderColor = '';
+          this.style.boxShadow = '';
+        });
+      });
+    });
+
+    // Form submit
+    document.getElementById('projectForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+      const missing = REQUIRED.filter(function (id) {
+        return !document.getElementById(id).value.trim();
+      });
+      if (missing.length > 0) {
+        alert('Please fill in all required fields in Project Details.');
+        return;
+      }
+      console.log('Project saved');
+      alert('Project created successfully!');
+    });
+  </script>
+</body>
+
+</html>

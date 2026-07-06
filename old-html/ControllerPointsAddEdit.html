@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>Impact : Home</title>
+  <link rel="stylesheet" href="https://unpkg.com/primeflex@3.3.1/primeflex.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/primeflex.css">
+  <!-- Latest Global & Custom CSS -->
+  <link rel="stylesheet" href="/scss/style.css">
+</head>
+
+<body class="home-page point-status-page bg-default">
+  <nav class="navbar rounded-0 mb-0 border-none z-100" id="navbarMain">
+    <div class="body-container flex justify-content-between w-full align-items-center">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+          data-target="#bs-example-navbar-collapse-1" aria-expanded="false" title="Open Menu">
+          <span class="sr-only">Toggle navigation</span>
+          <img src="img/menu-bar.svg" alt="menu" class="w-2rem">
+        </button>
+        <a class="navbar-brand py-2 pl-0" href="/">
+          <img src="img/Logo.svg" alt="Logo" class="w-18rem">
+        </a>
+        <p class="navbar-text">
+          <a href="/" class="navbar-link text-decoration flex align-items-center"
+            style="white-space: nowrap; gap: 8px;">
+            <span class="font-bold project-brand-text">A3-00001234</span>
+            <span class="font-bold project-brand-text">IMPACT DEMO</span>
+            <!-- <img src="img/impact-image.svg" alt="IMPACT" class="w-10rem"> -->
+          </a>
+        </p>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse w-full" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li><a href="PointStatusList.html">Points</a></li>
+          <li><a href="ControllerStatusList.html">Controllers</a></li>
+          <li><a href="IssuesList.html">Issues</a></li>
+          <li><a href="ImportFiles.html">Files</a></li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Reports <span
+                class="glyphicon glyphicon-chevron-down navbar-dropdown-icon" aria-hidden="true"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="CommissioningStatusReport.html">IO Point Commissioning Type A</a></li>
+              <li><a href="CommissioningStatusReportWithPmd.html">IO Point Commissioning Type B</a></li>
+              <li><a href="Reports/ControllerInstallReport.html">Installation Points List with Wire
+                  Tags</a></li>
+              <li><a href="Reports/ControllerStatusReport.html">Controller Status Report</a></li>
+              <li><a href="ControllerMetaDataReport.html">Controller Meta Data</a></li>
+              <li><a href="QRCodes.html">Controller QR Codes</a></li>
+              <li><a href="Reports/IssuesReport.html">Project Issues</a></li>
+              <li><a href="ControllerPointsOfflineComm.html">Offline Commissioning Sheet</a></li>
+              <li><a href="Reports/ControllerPointsReport.html">Controller Points Export Report</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Project <span
+                class="glyphicon glyphicon-chevron-down navbar-dropdown-icon" aria-hidden="true"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="Default.html">Change Project</a></li>
+              <li><a href="RemoveFromProject.html">Remove me from this Project</a></li>
+              <li><a href="ProjectList.html">Projects List</a></li>
+              <li><a href="ProjectAddEdit.html">Create New Project</a></li>
+              <li><a href="ProjectDashboard.html">Project Dashboard</a></li>
+              <li><a href="ProjectUserList.html">Project Members</a></li>
+              <li><a href="ControllerChangesList.html">Change History</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Help <span
+                class="glyphicon glyphicon-chevron-down navbar-dropdown-icon" aria-hidden="true"></span></a>
+            <ul class="dropdown-menu">
+              <li><a
+                  href="https://schneiderelectric.sharepoint.com/:b:/s/DigitalBuildingsPacificZone/EZIyNNJga_NKuHu8CuhUykIBxtE7fz06u7YJjT_RmH3Agg?e=uFUqwP"
+                  target="_blank">Installers Guide</a></li>
+              <li><a
+                  href="https://schneiderelectric.sharepoint.com/:b:/s/DigitalBuildingsPacificZone/EWXBl6uFRNRDsODbGxfKwUwBa1nMA_7JJj7ixkebrIRyYg?e=ph9weM"
+                  target="_blank">Commissioning Guide</a></li>
+              <li><a
+                  href="https://schneiderelectric.sharepoint.com/:b:/s/DigitalBuildingsPacificZone/Eb4xtDPEkHVFin7eCegHu8QBGpmtR0-MUo6qkQLKM40cbw?e=kMRZrK"
+                  target="_blank">Project Administrators Guide</a></li>
+              <li><a
+                  href="https://schneiderelectric.sharepoint.com/:b:/s/DigitalBuildingsPacificZone/ET9GkJ9M9BxHrkPVckLZal8BteoplUybuni7d7nz4Cbvvw?e=oKKeYO"
+                  target="_blank">Set up Teams Notifications</a></li>
+              <li><a
+                  href="https://schneiderelectric.sharepoint.com/:b:/r/sites/DigitalBuildingsPacificZone/Main%20Site%20Documents/Systems/EEP/EEP%20Standards%20PUBLIC/EEPS07_160329_Installation%20Standards%20R2.2_dl.pdf?csf=1&amp;web=1&amp;e=ntsdiT"
+                  target="_blank">Installation Standards</a></li>
+              <li><a
+                  href="https://schneiderelectric.sharepoint.com/sites/DigitalBuildingsPacificZone/SitePages/Tools_IMPACT.aspx"
+                  target="_blank">IMPACT on Share Point</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <ul class="nav navbar-nav navbar-right w-auto">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle flex align-items-center gap-2 py-2" data-toggle="dropdown" role="button"
+            aria-haspopup="true" aria-expanded="false">
+
+            <img src="/img/profile.svg" alt="" class="img-responsive w-3rem border-circle" title="User Profile">
+
+            <span>
+              <span style="white-space: nowrap; display: block;">John Doe</span>
+              <span style="white-space: nowrap; display: block;">Global Leader</span>
+            </span>
+
+            <span class="glyphicon glyphicon-chevron-down navbar-dropdown-icon" aria-hidden="true"></span>
+          </a>
+          <ul class="dropdown-menu profile-dropdown-menu">
+            <li><span class="profile-dropdown-header">Appearance</span></li>
+            <li><a href="#" class="profile-dropdown-item">Light</a></li>
+            <li><a href="#" class="profile-dropdown-item">Dark</a></li>
+            <li><a href="#" class="profile-dropdown-item">Auto (Default)</a></li>
+
+            <li class="profile-dropdown-divider"></li>
+
+            <li><span class="profile-dropdown-header">Navigation layout</span></li>
+            <li><a href="#" class="profile-dropdown-item">Vertical (Sidebar)</a></li>
+            <li><a href="#" class="profile-dropdown-item">Horizontal (Top)</a></li>
+
+            <li class="profile-dropdown-divider"></li>
+
+            <li><a href="#" class="profile-dropdown-item">Profile</a></li>
+            <li><a href="/UserAccount/Logout" class="profile-dropdown-item">Logout</a></li>
+          </ul>
+        </li>
+      </ul>
+      <!-- /.navbar-collapse -->
+    </div>
+  </nav>
+
+
+  <main class="main bg-default sister-technology-page">
+    <div class="body-container">
+      <div class="breadcrumb-wrapper">
+        <h2 class="breadcrumb-title">
+          <span class="glyphicon glyphicon-signal breadcrumb-title-icon" aria-hidden="true"></span>
+          Controller Points - Add/Edit
+        </h2>
+        <div class="breadcrumb-group">
+          <a href="index.html" class="breadcrumb-item">
+            Dashboard
+          </a>
+          <span class="breadcrumb-separator">/</span>
+          <span class="breadcrumb-current">
+            <a href="/PointStatusList.html">Point Status List</a>
+          </span>
+          <span class="breadcrumb-separator">/</span>
+          <span class="breadcrumb-current">Controller Points - Add/Edit</span>
+        </div>
+      </div>
+      <form class="controller-point-edit-form bg-white rounded-4 shadow-sm">
+        <section>
+          <h3 class="block-heading">Controller IO Module</h3>
+          <div class="row g-4">
+            <div class="col-md-4 mb-4">
+              <div class="form-controll-group">
+                <label for="controller">Controller
+                  (PartSystemName)</label>
+                <select id="controller" class="form-control" required>
+                  <option value="">Select Controller</option>
+                  <!-- Options dynamically loaded -->
+                </select>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div class="form-controll-group">
+                <label for="module">Module (BomTag)</label>
+                <select id="module" class="form-control" required>
+                  <option value="">Select Module</option>
+                  <!-- Options dynamically loaded -->
+                </select>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div class="form-controll-group">
+                <label for="ioChannel">IO Channel (PointName)</label>
+                <select id="ioChannel" class="form-control" required>
+                  <option value="">Select IO Channel</option>
+                  <!-- Options dynamically loaded -->
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="row g-4">
+            <div class="col-md-4 mb-4">
+              <div class="form-controll-group">
+                <label for="deviceType">Device Type (PartNumber)</label>
+                <input type="text" id="deviceType" class="form-control" placeholder="Device Type" required />
+              </div>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div class="form-controll-group">
+                <label for="ioType">IoType</label>
+                <input type="text" id="ioType" class="form-control" placeholder="IO Type" required />
+              </div>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div class="form-controll-group">
+                <label for="changeNotes">Change Notes</label>
+                <textarea id="changeNotes" class="form-control" rows="1"
+                  placeholder="Change notes for record"></textarea>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <hr />
+
+        <section class="mt-5">
+          <h3 class="block-heading">IO Point</h3>
+          <div class="row g-4">
+            <div class="col-md-4 mb-4">
+              <div class="form-controll-group">
+                <label for="pointSoftwareTag" class="form-label">Point
+                  Software
+                  Tag</label>
+                <input type="text" id="pointSoftwareTag" class="form-control" placeholder="Point Software Tag" required />
+              </div>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div class="form-controll-group">
+                <label for="pointPartNumber" class="form-label">Part
+                  Number</label>
+                <input type="text" id="pointPartNumber" class="form-control" placeholder="Part Number" required />
+              </div>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div class="form-controll-group">
+                <label for="partDescription" class="form-label">Part
+                  Description</label>
+                <input type="text" id="partDescription" class="form-control" placeholder="Part Description" />
+              </div>
+            </div>
+          </div>
+          <div class="row g-4">
+            <div class="col-md-4 mb-4">
+              <div class="form-controll-group">
+                <label for="description" class="form-label">Description</label>
+                <input type="text" id="description" class="form-control" placeholder="Description" />
+              </div>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div class="form-controll-group">
+                <label for="inputScaleMax" class="form-label">Input Scale
+                  Max</label>
+                <input type="number" id="inputScaleMax" class="form-control" placeholder="Input Scale Max" />
+              </div>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div class="form-controll-group">
+                <label for="engScaleMax" class="form-label">Eng Scale
+                Max</label>
+              <input type="number" id="engScaleMax" class="form-control" placeholder="Eng Scale Max" />
+              </div>
+            </div>
+            
+          </div>
+          <div class="row g-4">
+            <div class="col-md-4 mb-4">
+              <div class="form-controll-group">
+                <label for="pointType" class="form-label">Point Type</label>
+                <input type="text" id="pointType" class="form-control" placeholder="Point Type" />
+              </div>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div class="form-controll-group">
+                <label for="location" class="form-label">Location</label>
+                <input type="text" id="location" class="form-control" placeholder="Location" />
+              </div>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div class="form-controll-group">
+                <label for="inputScaleMin" class="form-label">Input Scale
+                  Min</label>
+                <input type="number" id="inputScaleMin" class="form-control" placeholder="Input Scale Min" />
+              </div>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div class="form-controll-group">
+                <label for="engScaleMin" class="form-label">Eng Scale
+                  Min</label>
+                <input type="number" id="engScaleMin" class="form-control" placeholder="Eng Scale Min" />
+              </div>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div class="form-controll-group">
+                <label for="notes" class="form-label">Notes</label>
+                <textarea id="notes" class="form-control" rows="2" placeholder="Notes"></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 flex justify-content-end" style="gap: 12px;">
+              <button type="button" class="btn submit-button">Update</button>
+            </div>
+          </div>
+        </section>
+      </form>
+    </div>
+  </main>
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="/js/jquery-3.7.1.min.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/ag-grid-enterprise@32.3.0/dist/ag-grid-enterprise.min.js?t=1733931380679"></script>
+  <!-- External AG Grid Scripts -->
+  <script src="ag-grid/agGridSetup.js"></script>
+  <script src="ag-grid/pointersList.js"></script>
+  <script src="ag-grid/pointersListMobile.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>Impact : Raise Issue</title>
+  <link rel="stylesheet" href="https://unpkg.com/primeflex@3.3.1/primeflex.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/primeflex.css">
+  <link rel="stylesheet" href="/scss/style.css">
+</head>
+
+<body class="home-page raise-issue-page bg-default">
+  <nav class="navbar rounded-0 mb-0 border-none z-100" id="navbarMain">
+    <div class="body-container flex justify-content-between w-full align-items-center">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+          data-target="#bs-example-navbar-collapse-1" aria-expanded="false" title="Open Menu">
+          <span class="sr-only">Toggle navigation</span>
+          <img src="img/menu-bar.svg" alt="menu" class="w-2rem">
+        </button>
+        <a class="navbar-brand py-2 pl-0" href="/">
+          <img src="img/Logo.svg" alt="Logo" class="w-18rem">
+        </a>
+        <p class="navbar-text">
+          <a href="/" class="navbar-link text-decoration flex align-items-center"
+            style="white-space: nowrap; gap: 8px;">
+            <span class="font-bold project-brand-text">A3-00001234</span>
+            <span class="font-bold project-brand-text">IMPACT DEMO</span>
+            <!-- <img src="img/impact-image.svg" alt="IMPACT" class="w-10rem"> -->
+          </a>
+        </p>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse w-full" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li><a href="PointStatusList.html">Points</a></li>
+          <li><a href="ControllerStatusList.html">Controllers</a></li>
+          <li><a href="IssuesList.html">Issues</a></li>
+          <li><a href="ImportFiles.html">Files</a></li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Reports <span
+                class="glyphicon glyphicon-chevron-down navbar-dropdown-icon" aria-hidden="true"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="CommissioningStatusReport.html">IO Point Commissioning Type A</a></li>
+              <li><a href="CommissioningStatusReportWithPmd.html">IO Point Commissioning Type B</a>
+              </li>
+              <li><a href="Reports/ControllerInstallReport.html">Installation Points List with Wire
+                  Tags</a></li>
+              <li><a href="Reports/ControllerStatusReport.html">Controller Status Report</a></li>
+              <li><a href="ControllerMetaDataReport.html">Controller Meta Data</a></li>
+              <li><a href="QRCodes.html">Controller QR Codes</a></li>
+              <li><a href="Reports/IssuesReport.html">Project Issues</a></li>
+              <li><a href="ControllerPointsOfflineComm.html">Offline Commissioning Sheet</a></li>
+              <li><a href="Reports/ControllerPointsReport.html">Controller Points Export Report</a>
+              </li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Project <span
+                class="glyphicon glyphicon-chevron-down navbar-dropdown-icon" aria-hidden="true"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="Default.html">Change Project</a></li>
+              <li><a href="RemoveFromProject.html">Remove me from this Project</a></li>
+              <li><a href="ProjectList.html">Projects List</a></li>
+              <li><a href="ProjectAddEdit.html">Create New Project</a></li>
+              <li><a href="ProjectDashboard.html">Project Dashboard</a></li>
+              <li><a href="ProjectUserList.html">Project Members</a></li>
+              <li><a href="ControllerChangesList.html">Change History</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Help <span
+                class="glyphicon glyphicon-chevron-down navbar-dropdown-icon" aria-hidden="true"></span></a>
+            <ul class="dropdown-menu">
+              <li><a
+                  href="https://schneiderelectric.sharepoint.com/:b:/s/DigitalBuildingsPacificZone/EZIyNNJga_NKuHu8CuhUykIBxtE7fz06u7YJjT_RmH3Agg?e=uFUqwP"
+                  target="_blank">Installers Guide</a></li>
+              <li><a
+                  href="https://schneiderelectric.sharepoint.com/:b:/s/DigitalBuildingsPacificZone/EWXBl6uFRNRDsODbGxfKwUwBa1nMA_7JJj7ixkebrIRyYg?e=ph9weM"
+                  target="_blank">Commissioning Guide</a></li>
+              <li><a
+                  href="https://schneiderelectric.sharepoint.com/:b:/s/DigitalBuildingsPacificZone/Eb4xtDPEkHVFin7eCegHu8QBGpmtR0-MUo6qkQLKM40cbw?e=kMRZrK"
+                  target="_blank">Project Administrators Guide</a></li>
+              <li><a
+                  href="https://schneiderelectric.sharepoint.com/:b:/s/DigitalBuildingsPacificZone/ET9GkJ9M9BxHrkPVckLZal8BteoplUybuni7d7nz4Cbvvw?e=oKKeYO"
+                  target="_blank">Set up Teams Notifications</a></li>
+              <li><a
+                  href="https://schneiderelectric.sharepoint.com/:b:/r/sites/DigitalBuildingsPacificZone/Main%20Site%20Documents/Systems/EEP/EEP%20Standards%20PUBLIC/EEPS07_160329_Installation%20Standards%20R2.2_dl.pdf?csf=1&amp;web=1&amp;e=ntsdiT"
+                  target="_blank">Installation Standards</a></li>
+              <li><a
+                  href="https://schneiderelectric.sharepoint.com/sites/DigitalBuildingsPacificZone/SitePages/Tools_IMPACT.aspx"
+                  target="_blank">IMPACT on Share Point</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <ul class="nav navbar-nav navbar-right w-auto">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle flex align-items-center gap-2 py-2" data-toggle="dropdown" role="button"
+            aria-haspopup="true" aria-expanded="false">
+
+            <img src="/img/profile.svg" alt="" class="img-responsive w-3rem border-circle" title="User Profile">
+
+            <span>
+              <span style="white-space: nowrap; display: block;">John Doe</span>
+              <span style="white-space: nowrap; display: block;">Global Leader</span>
+            </span>
+
+            <span class="glyphicon glyphicon-chevron-down navbar-dropdown-icon" aria-hidden="true"></span>
+          </a>
+          <ul class="dropdown-menu profile-dropdown-menu">
+            <li><span class="profile-dropdown-header">Appearance</span></li>
+            <li><a href="#" class="profile-dropdown-item">Light</a></li>
+            <li><a href="#" class="profile-dropdown-item">Dark</a></li>
+            <li><a href="#" class="profile-dropdown-item">Auto (Default)</a></li>
+
+            <li class="profile-dropdown-divider"></li>
+
+            <li><span class="profile-dropdown-header">Navigation layout</span></li>
+            <li><a href="#" class="profile-dropdown-item">Vertical (Sidebar)</a></li>
+            <li><a href="#" class="profile-dropdown-item">Horizontal (Top)</a></li>
+
+            <li class="profile-dropdown-divider"></li>
+
+            <li><a href="#" class="profile-dropdown-item">Profile</a></li>
+            <li><a href="/UserAccount/Logout" class="profile-dropdown-item">Logout</a></li>
+          </ul>
+        </li>
+      </ul>
+      <!-- /.navbar-collapse -->
+    </div>
+  </nav>
+
+  <main class="main bg-default sister-technology-page">
+    <div class="body-container">
+      <div class="breadcrumb-wrapper">
+        <h2 class="breadcrumb-title">
+          <span class="glyphicon glyphicon-plus-sign breadcrumb-title-icon" aria-hidden="true"></span>
+          Raise Issue
+        </h2>
+        <div class="breadcrumb-group">
+          <a href="index.html" class="breadcrumb-item">Dashboard</a>
+          <span class="breadcrumb-separator">/</span>
+          <a href="IssuesList.html" class="breadcrumb-item">Issues List</a>
+          <span class="breadcrumb-separator">/</span>
+          <span class="breadcrumb-current">Raise Issue</span>
+        </div>
+      </div>
+
+
+      <div class="raise-issue-form-container">
+        <div class="block-heading">
+          <h3 class="raise-issue-card-title">Issue Details</h3>
+          <p class="raise-issue-card-subtitle">Capture the issue, ownership, and current status.</p>
+        </div>
+        <form class="raise-issue-form-shell" id="raiseIssueForm">
+          <div class="row g-4">
+            <div class="col-md-4 mb-4">
+              <div class="form-controll-group">
+                <label for="issueOpenDate">Issue Open Date</label>
+                <input type="text" id="issueOpenDate" class="form-control" disabled>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div class="form-controll-group">
+                <label for="issueType">Issue Type</label>
+                <select id="issueType" class="form-control">
+                  <option value="other">Other</option>
+                  <option value="programming issue">Programming Issue</option>
+                  <option value="component failure">Component Failure</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-4 raise-issue-field">
+              <div class="form-controll-group">
+                <label for="assignTo">Assign To</label>
+                <div class="raise-issue-assign-row">
+                  <select id="assignTo" class="form-control">
+                    <option value="john doe">John Doe</option>
+                    <option value="jane smith">Jane Smith</option>
+                    <option value="alex chen">Alex Chen</option>
+                    <option value="unassigned">Unassigned</option>
+                  </select>
+                  <button type="button"
+                    class="btn raise-issue-secondary-btn raise-issue-icon-btn raise-issue-add-toggle-btn"
+                    id="showAddAssigneeBtn" aria-label="Show new assignee input" title="Add new assignee">
+                    <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                  </button>
+                </div>
+                <div class="raise-issue-inline-add raise-issue-inline-add-hidden" id="addAssigneeWrap">
+                  <input type="text" id="newAssignee" class="form-control raise-issue-input"
+                    placeholder="Add new assignee">
+                  <button type="button" class="btn raise-issue-secondary-btn raise-issue-icon-btn" id="addAssigneeBtn"
+                    aria-label="Add assignee" title="Add assignee">
+                    <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                  </button>
+                  <button type="button" class="btn raise-issue-secondary-btn raise-issue-icon-btn" id="hideAddAssigneeBtn"
+                    aria-label="Hide new assignee input" title="Cancel">
+                    <span class="glyphicon glyphicon-minus" aria-hidden="true"></span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-4 raise-issue-field">
+              <div class="form-controll-group">
+                <label for="issueStatus">Issue Status</label>
+                <select id="issueStatus" class="form-control">
+                  <option value="open">Open</option>
+                  <option value="in progress">In Progress</option>
+                  <option value="closed">Closed</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-4 raise-issue-field">
+              <div class="form-controll-group">
+                <label for="issueClosedDate">Issue Closed Date</label>
+                <input type="date" id="issueClosedDate" class="form-control">
+              </div>
+            </div>
+
+            <div class="col-xs-12 mb-4 raise-issue-field">
+              <div class="form-controll-group">
+                <label for="issueDescription">Issue Description</label>
+                <textarea id="issueDescription" class="form-control raise-issue-textarea" rows="5"
+                  placeholder="Describe the issue clearly"></textarea>
+              </div>
+            </div>
+
+            <div class="col-xs-12 mb-4 raise-issue-field">
+              <div class="form-controll-group">
+                <label for="issueTags">Issue Tags</label>
+                <textarea id="issueTags" class="form-control raise-issue-textarea" rows="3"
+                  placeholder="Enter issue tags"></textarea>
+              </div>
+            </div>
+
+            <div class="col-xs-12 mb-4 raise-issue-field">
+              <div class="form-controll-group">
+                <label for="issuePhotos">Add Photos</label>
+                <label for="issuePhotos" class="raise-issue-upload-box">
+                  <span class="glyphicon glyphicon-picture" aria-hidden="true"></span>
+                  <span>Select one or more images</span>
+                  <span class="raise-issue-upload-hint">PNG, JPG, JPEG, WEBP</span>
+                </label>
+                <input type="file" id="issuePhotos" class="raise-issue-file-input" accept="image/*" multiple>
+              </div>
+            </div>
+
+            <div class="col-xs-12 mb-4 raise-issue-field">
+              <div id="issuePhotoPreview" class="raise-issue-preview-grid" aria-live="polite"></div>
+            </div>
+          </div>
+
+          <div class="raise-issue-card">
+            <div class="raise-issue-card-header">
+              <div>
+                <h3 class="raise-issue-card-title">Notifications</h3>
+                <p class="raise-issue-card-subtitle">Choose who should be notified when this issue is submitted.</p>
+              </div>
+            </div>
+
+            <div class="raise-issue-checkbox-group">
+              <label class="raise-issue-checkbox-item">
+                <input type="checkbox" id="emailProjectTeam">
+                <span>Email Project Team</span>
+              </label>
+              <label class="raise-issue-checkbox-item">
+                <input type="checkbox" id="emailMe" checked>
+                <span>Email Me</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="raise-issue-actions">
+            <a href="IssuesList.html" class="btn btn-default raise-issue-cancel-btn">Cancel</a>
+            <button type="submit" class="btn raise-issue-submit-btn">Submit</button>
+          </div>
+        </form>
+      </div>
+
+
+    </div>
+  </main>
+
+  <script src="/js/jquery-3.7.1.min.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+  <script src="ag-grid/raiseIssue.js"></script>
+</body>
+
+</html>

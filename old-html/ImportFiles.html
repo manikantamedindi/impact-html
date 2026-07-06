@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Impact : Home</title>
+    <link rel="stylesheet" href="https://unpkg.com/primeflex@3.3.1/primeflex.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/primeflex.css">
+    <!-- Latest Global & Custom CSS -->
+    <link rel="stylesheet" href="/scss/style.css">
+</head>
+
+<body class="home-page point-status-page bg-default">
+    <nav class="navbar rounded-0 mb-0 border-none z-100" id="navbarMain">
+        <div class="body-container flex justify-content-between w-full align-items-center">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false" title="Open Menu">
+                    <span class="sr-only">Toggle navigation</span>
+                    <img src="img/menu-bar.svg" alt="menu" class="w-2rem">
+                </button>
+                <a class="navbar-brand py-2 pl-0" href="/">
+                    <img src="img/Logo.svg" alt="Logo" class="w-18rem">
+                </a>
+                <p class="navbar-text">
+                    <a href="/" class="navbar-link text-decoration flex align-items-center"
+                        style="white-space: nowrap; gap: 8px;">
+                        <span class="font-bold project-brand-text">A3-00001234</span>
+                        <span class="font-bold project-brand-text">IMPACT DEMO</span>
+                        <!-- <img src="img/impact-image.svg" alt="IMPACT" class="w-10rem"> -->
+                    </a>
+                </p>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse w-full" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="PointStatusList.html">Points</a></li>
+                    <li><a href="ControllerStatusList.html">Controllers</a></li>
+                    <li><a href="IssuesList.html">Issues</a></li>
+                    <li><a href="ImportFiles.html">Files</a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Reports <span
+                                class="glyphicon glyphicon-chevron-down navbar-dropdown-icon"
+                                aria-hidden="true"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="CommissioningStatusReport.html">IO Point Commissioning Type A</a></li>
+                            <li><a href="CommissioningStatusReportWithPmd.html">IO Point Commissioning Type B</a></li>
+                            <li><a href="Reports/ControllerInstallReport.html">Installation Points List with Wire
+                                    Tags</a></li>
+                            <li><a href="Reports/ControllerStatusReport.html">Controller Status Report</a></li>
+                            <li><a href="ControllerMetaDataReport.html">Controller Meta Data</a></li>
+                            <li><a href="QRCodes.html">Controller QR Codes</a></li>
+                            <li><a href="Reports/IssuesReport.html">Project Issues</a></li>
+                            <li><a href="ControllerPointsOfflineComm.html">Offline Commissioning Sheet</a></li>
+                            <li><a href="Reports/ControllerPointsReport.html">Controller Points Export Report</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Project <span
+                                class="glyphicon glyphicon-chevron-down navbar-dropdown-icon"
+                                aria-hidden="true"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="Default.html">Change Project</a></li>
+                            <li><a href="RemoveFromProject.html">Remove me from this Project</a></li>
+                            <li><a href="ProjectList.html">Projects List</a></li>
+                            <li><a href="ProjectAddEdit.html">Create New Project</a></li>
+                            <li><a href="ProjectDashboard.html">Project Dashboard</a></li>
+                            <li><a href="ProjectUserList.html">Project Members</a></li>
+                            <li><a href="ControllerChangesList.html">Change History</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Help <span
+                                class="glyphicon glyphicon-chevron-down navbar-dropdown-icon"
+                                aria-hidden="true"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="https://schneiderelectric.sharepoint.com/:b:/s/DigitalBuildingsPacificZone/EZIyNNJga_NKuHu8CuhUykIBxtE7fz06u7YJjT_RmH3Agg?e=uFUqwP"
+                                    target="_blank">Installers Guide</a></li>
+                            <li><a href="https://schneiderelectric.sharepoint.com/:b:/s/DigitalBuildingsPacificZone/EWXBl6uFRNRDsODbGxfKwUwBa1nMA_7JJj7ixkebrIRyYg?e=ph9weM"
+                                    target="_blank">Commissioning Guide</a></li>
+                            <li><a href="https://schneiderelectric.sharepoint.com/:b:/s/DigitalBuildingsPacificZone/Eb4xtDPEkHVFin7eCegHu8QBGpmtR0-MUo6qkQLKM40cbw?e=kMRZrK"
+                                    target="_blank">Project Administrators Guide</a></li>
+                            <li><a href="https://schneiderelectric.sharepoint.com/:b:/s/DigitalBuildingsPacificZone/ET9GkJ9M9BxHrkPVckLZal8BteoplUybuni7d7nz4Cbvvw?e=oKKeYO"
+                                    target="_blank">Set up Teams Notifications</a></li>
+                            <li><a href="https://schneiderelectric.sharepoint.com/:b:/r/sites/DigitalBuildingsPacificZone/Main%20Site%20Documents/Systems/EEP/EEP%20Standards%20PUBLIC/EEPS07_160329_Installation%20Standards%20R2.2_dl.pdf?csf=1&amp;web=1&amp;e=ntsdiT"
+                                    target="_blank">Installation Standards</a></li>
+                            <li><a href="https://schneiderelectric.sharepoint.com/sites/DigitalBuildingsPacificZone/SitePages/Tools_IMPACT.aspx"
+                                    target="_blank">IMPACT on Share Point</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <ul class="nav navbar-nav navbar-right w-auto">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle flex align-items-center gap-2 py-2" data-toggle="dropdown"
+                        role="button" aria-haspopup="true" aria-expanded="false">
+
+                        <img src="/img/profile.svg" alt="" class="img-responsive w-3rem border-circle"
+                            title="User Profile">
+
+                        <span>
+                            <span style="white-space: nowrap; display: block;">John Doe</span>
+                            <span style="white-space: nowrap; display: block;">Global Leader</span>
+                        </span>
+
+                        <span class="glyphicon glyphicon-chevron-down navbar-dropdown-icon" aria-hidden="true"></span>
+                    </a>
+                    <ul class="dropdown-menu profile-dropdown-menu">
+                        <li><span class="profile-dropdown-header">Appearance</span></li>
+                        <li><a href="#" class="profile-dropdown-item">Light</a></li>
+                        <li><a href="#" class="profile-dropdown-item">Dark</a></li>
+                        <li><a href="#" class="profile-dropdown-item">Auto (Default)</a></li>
+
+                        <li class="profile-dropdown-divider"></li>
+
+                        <li><span class="profile-dropdown-header">Navigation layout</span></li>
+                        <li><a href="#" class="profile-dropdown-item">Vertical (Sidebar)</a></li>
+                        <li><a href="#" class="profile-dropdown-item">Horizontal (Top)</a></li>
+
+                        <li class="profile-dropdown-divider"></li>
+
+                        <li><a href="#" class="profile-dropdown-item">Profile</a></li>
+                        <li><a href="/UserAccount/Logout" class="profile-dropdown-item">Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- /.navbar-collapse -->
+        </div>
+    </nav>
+
+
+    <main class="main bg-default sister-technology-page">
+        <div class="body-container">
+
+            <div class="breadcrumb-wrapper">
+                <h2 class="breadcrumb-title">
+                    <span class="glyphicon glyphicon-file breadcrumb-title-icon" aria-hidden="true"></span>
+                    Import Files
+                </h2>
+                <div class="breadcrumb-group">
+                    <a href="index.html" class="breadcrumb-item">
+                        Dashboard
+                    </a>
+                    <span class="breadcrumb-separator">/</span>
+                    <span class="breadcrumb-current">Import Files</span>
+                </div>
+            </div>
+
+            <div class="filters-navbar issues-list-filters-navbar">
+                <div class="row p-0 m-0">
+                    <div class="col-md-3  pl-0">
+                        <div class="filters-wrapper">
+                            <div class="search-filter">
+                                <svg class="search-filter-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <circle cx="11" cy="11" r="8"></circle>
+                                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                                </svg>
+                                <input type="text" placeholder="Search Files..." class="search-filter-input" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-9 pr-0">
+                        <div class="filters-wrapper flex justify-content-end align-items-center gap-3">
+                            <div class="filter-action-buttons">
+                                <button class="btn btn-success fiter-button" type="button" id="uploadBtnMain">
+                                   <img src="/assets/icons/upload.svg" class="filter-button-icon" alt="upload icon">
+                                    Upload Files
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="myGrid" class="ag-theme-quartz ag-grid-responsive-height"></div>
+            <div class="mt-2 text-sm text-700 page-footer-attribution">© 2026 - SEBA.Net</div>
+        </div>
+    </main>
+
+    <!-- Upload Modal Dialog -->
+    <div id="uploadModal" class="upload-modal-overlay"
+        style="display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0, 0, 0, 0.5); z-index: 1000; align-items: center; justify-content: center;">
+        <div class="upload-modal-content"
+            style="background: white; border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); width: 90%; max-width: 600px; max-height: 80vh; overflow-y: auto; display: flex; flex-direction: column;">
+            <!-- Modal Header -->
+            <div
+                style="padding: 24px; border-bottom: 1px solid #e9ecef; display: flex; justify-content: space-between; align-items: center;">
+                <h3 style="margin: 0; font-size: 18px; font-weight: 600; color: #212529;">Upload Files</h3>
+                <button id="closeUploadModal"
+                    style="background: none; border: none; font-size: 24px; cursor: pointer; color: #6c757d; padding: 0; width: 32px; height: 32px; display: flex; align-items: center; justify-content: center;">×</button>
+            </div>
+
+            <!-- Modal Body -->
+            <div style="padding: 24px; flex: 1; overflow-y: auto;">
+                <!-- Info Box -->
+                <div
+                    style="background-color: #e7f1ff; border: 1px solid #bae6ff; border-radius: 6px; padding: 12px 16px; margin-bottom: 24px; display: flex; gap: 12px; align-items: flex-start;">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0056b3" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 2px;">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="12" y1="16" x2="12" y2="12"></line>
+                        <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                    </svg>
+                    <div style="font-size: 13px; color: #0056b3; line-height: 1.5;">
+                        <strong>Supported File Types:</strong> PDF, TXT, Excel, XML<br>
+                        <strong>Limit:</strong> 10MB per file • Multiple uploads allowed
+                    </div>
+                </div>
+
+                <!-- Drag & Drop Area -->
+                <div id="dragDropArea"
+                    style="border: 2px dashed #dee2e6; border-radius: 8px; padding: 40px 20px; text-align: center; cursor: pointer; transition: all 0.3s ease; margin-bottom: 24px; background-color: #f8f9fa;">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" style="margin: 0 auto 16px; color: #007bff;">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                        <polyline points="17 8 12 3 7 8"></polyline>
+                        <line x1="12" y1="3" x2="12" y2="15"></line>
+                    </svg>
+                    <p style="margin: 0 0 8px; font-size: 16px; font-weight: 600; color: #212529;">Drag & drop files
+                        here</p>
+                    <p style="margin: 0; font-size: 13px; color: #6c757d;">or click to select files</p>
+                </div>
+
+                <!-- Hidden File Input -->
+                <input type="file" id="modalFileInput" multiple style="display: none;"
+                    accept=".pdf,.txt,.xlsx,.xls,.xml">
+
+                <!-- Files List -->
+                <div id="filesList" style="display: none;">
+                    <h4 style="margin: 0 0 16px; font-size: 14px; font-weight: 600; color: #212529;">Selected Files:
+                    </h4>
+                    <div id="filesContainer" style="display: flex; flex-direction: column; gap: 12px;"></div>
+                </div>
+            </div>
+
+            <!-- Modal Footer -->
+            <div
+                style="padding: 16px 24px; border-top: 1px solid #e9ecef; display: flex; gap: 12px; justify-content: flex-end;">
+                <button id="cancelUploadModal" class="btn"
+                    style="padding: 8px 16px; border: 1px solid #dee2e6; background-color: white; color: #495057; border-radius: 4px; cursor: pointer; font-weight: 500; transition: all 0.3s ease;">Cancel</button>
+                <button id="uploadFilesBtn" class="btn btn-primary"
+                    style="padding: 8px 16px; border: none; background-color: #007bff; color: white; border-radius: 4px; cursor: pointer; font-weight: 500; transition: all 0.3s ease;">Upload</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="/js/jquery-3.7.1.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script
+        src="https://cdn.jsdelivr.net/npm/ag-grid-enterprise@32.3.0/dist/ag-grid-enterprise.min.js?t=1733931380679"></script>
+    <!-- External AG Grid Scripts -->
+    <script src="ag-grid/agGridSetup.js"></script>
+    <script src="ag-grid/importFilesList.js"></script>
+</body>
+
+</html>

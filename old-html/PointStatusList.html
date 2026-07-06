@@ -1,0 +1,316 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>Impact : Home</title>
+  <link rel="stylesheet" href="https://unpkg.com/primeflex@3.3.1/primeflex.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/primeflex.css">
+  <!-- Latest Global & Custom CSS -->
+  <link rel="stylesheet" href="/scss/style.css">
+</head>
+
+<body class="home-page point-status-page bg-default">
+  <nav class="navbar rounded-0 mb-0 border-none z-100" id="navbarMain">
+    <div class="body-container flex justify-content-between w-full align-items-center">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+          data-target="#bs-example-navbar-collapse-1" aria-expanded="false" title="Open Menu">
+          <span class="sr-only">Toggle navigation</span>
+          <img src="img/menu-bar.svg" alt="menu" class="w-2rem">
+        </button>
+        <a class="navbar-brand py-2 pl-0" href="/">
+          <img src="img/Logo.svg" alt="Logo" class="w-18rem">
+        </a>
+        <p class="navbar-text">
+          <a href="/" class="navbar-link text-decoration flex align-items-center"
+            style="white-space: nowrap; gap: 8px;">
+            <span class="font-bold project-brand-text">A3-00001234</span>
+            <span class="font-bold project-brand-text">IMPACT DEMO</span>
+            <!-- <img src="img/impact-image.svg" alt="IMPACT" class="w-10rem"> -->
+          </a>
+        </p>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse w-full" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li><a href="PointStatusList.html">Points</a></li>
+          <li><a href="ControllerStatusList.html">Controllers</a></li>
+          <li><a href="IssuesList.html">Issues</a></li>
+          <li><a href="ImportFiles.html">Files</a></li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Reports <span
+                class="glyphicon glyphicon-chevron-down navbar-dropdown-icon" aria-hidden="true"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="CommissioningStatusReport.html">IO Point Commissioning Type A</a></li>
+              <li><a href="CommissioningStatusReportWithPmd.html">IO Point Commissioning Type B</a></li>
+              <li><a href="Reports/ControllerInstallReport.html">Installation Points List with Wire
+                  Tags</a></li>
+              <li><a href="Reports/ControllerStatusReport.html">Controller Status Report</a></li>
+              <li><a href="ControllerMetaDataReport.html">Controller Meta Data</a></li>
+              <li><a href="QRCodes.html">Controller QR Codes</a></li>
+              <li><a href="Reports/IssuesReport.html">Project Issues</a></li>
+              <li><a href="ControllerPointsOfflineComm.html">Offline Commissioning Sheet</a></li>
+              <li><a href="Reports/ControllerPointsReport.html">Controller Points Export Report</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Project <span
+                class="glyphicon glyphicon-chevron-down navbar-dropdown-icon" aria-hidden="true"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="Default.html">Change Project</a></li>
+              <li><a href="RemoveFromProject.html">Remove me from this Project</a></li>
+              <li><a href="ProjectList.html">Projects List</a></li>
+              <li><a href="ProjectAddEdit.html">Create New Project</a></li>
+              <li><a href="ProjectDashboard.html">Project Dashboard</a></li>
+              <li><a href="ProjectUserList.html">Project Members</a></li>
+              <li><a href="ControllerChangesList.html">Change History</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Help <span
+                class="glyphicon glyphicon-chevron-down navbar-dropdown-icon" aria-hidden="true"></span></a>
+            <ul class="dropdown-menu">
+              <li><a
+                  href="https://schneiderelectric.sharepoint.com/:b:/s/DigitalBuildingsPacificZone/EZIyNNJga_NKuHu8CuhUykIBxtE7fz06u7YJjT_RmH3Agg?e=uFUqwP"
+                  target="_blank">Installers Guide</a></li>
+              <li><a
+                  href="https://schneiderelectric.sharepoint.com/:b:/s/DigitalBuildingsPacificZone/EWXBl6uFRNRDsODbGxfKwUwBa1nMA_7JJj7ixkebrIRyYg?e=ph9weM"
+                  target="_blank">Commissioning Guide</a></li>
+              <li><a
+                  href="https://schneiderelectric.sharepoint.com/:b:/s/DigitalBuildingsPacificZone/Eb4xtDPEkHVFin7eCegHu8QBGpmtR0-MUo6qkQLKM40cbw?e=kMRZrK"
+                  target="_blank">Project Administrators Guide</a></li>
+              <li><a
+                  href="https://schneiderelectric.sharepoint.com/:b:/s/DigitalBuildingsPacificZone/ET9GkJ9M9BxHrkPVckLZal8BteoplUybuni7d7nz4Cbvvw?e=oKKeYO"
+                  target="_blank">Set up Teams Notifications</a></li>
+              <li><a
+                  href="https://schneiderelectric.sharepoint.com/:b:/r/sites/DigitalBuildingsPacificZone/Main%20Site%20Documents/Systems/EEP/EEP%20Standards%20PUBLIC/EEPS07_160329_Installation%20Standards%20R2.2_dl.pdf?csf=1&amp;web=1&amp;e=ntsdiT"
+                  target="_blank">Installation Standards</a></li>
+              <li><a
+                  href="https://schneiderelectric.sharepoint.com/sites/DigitalBuildingsPacificZone/SitePages/Tools_IMPACT.aspx"
+                  target="_blank">IMPACT on Share Point</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <ul class="nav navbar-nav navbar-right w-auto">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle flex align-items-center gap-2 py-2" data-toggle="dropdown" role="button"
+            aria-haspopup="true" aria-expanded="false">
+
+            <img src="/img/profile.svg" alt="" class="img-responsive w-3rem border-circle" title="User Profile">
+
+            <span>
+              <span style="white-space: nowrap; display: block;">John Doe</span>
+              <span style="white-space: nowrap; display: block;">Global Leader</span>
+            </span>
+
+            <span class="glyphicon glyphicon-chevron-down navbar-dropdown-icon" aria-hidden="true"></span>
+          </a>
+          <ul class="dropdown-menu profile-dropdown-menu">
+            <li><span class="profile-dropdown-header">Appearance</span></li>
+            <li><a href="#" class="profile-dropdown-item">Light</a></li>
+            <li><a href="#" class="profile-dropdown-item">Dark</a></li>
+            <li><a href="#" class="profile-dropdown-item">Auto (Default)</a></li>
+
+            <li class="profile-dropdown-divider"></li>
+
+            <li><span class="profile-dropdown-header">Navigation layout</span></li>
+            <li><a href="#" class="profile-dropdown-item">Vertical (Sidebar)</a></li>
+            <li><a href="#" class="profile-dropdown-item">Horizontal (Top)</a></li>
+
+            <li class="profile-dropdown-divider"></li>
+
+            <li><a href="#" class="profile-dropdown-item">Profile</a></li>
+            <li><a href="/UserAccount/Logout" class="profile-dropdown-item">Logout</a></li>
+          </ul>
+        </li>
+      </ul>
+      <!-- /.navbar-collapse -->
+    </div>
+  </nav>
+
+
+  <main class="main bg-default sister-technology-page">
+    <div class="body-container">
+
+      <div class="breadcrumb-wrapper">
+        <h2 class="breadcrumb-title">
+          <span class="glyphicon glyphicon-signal breadcrumb-title-icon" aria-hidden="true"></span>
+          Point Status List
+        </h2>
+        <div class="breadcrumb-group">
+          <a href="index.html" class="breadcrumb-item">
+            Dashboard
+          </a>
+          <span class="breadcrumb-separator">/</span>
+          <span class="breadcrumb-current">Point Status List</span>
+        </div>
+      </div>
+
+
+      <div class="filters-navbar issues-list-filters-navbar">
+        <div class="filter-wrapper-group">
+          <div class="filters-wrapper flex align-items-center gap-3">
+            <div class="search-filter">
+              <svg class="search-filter-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+              <input type="text" placeholder="Search Points..." class="search-filter-input" />
+            </div>
+            <button class="inner-navbar-reset-btn premium-reset-btn" type="button" id="resetMilestoneFiltersBtn"
+              title="Reset Filters" style="display: none;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path>
+                <polyline points="3 3 3 8 8 8"></polyline>
+              </svg>
+            </button>
+            <button class="inner-navbar-filter-btn premium-filter-btn" type="button" id="customFilterBtn"
+              title="Toggle Filters" aria-expanded="false">
+              <span class="inner-navbar-filter-btn-text premium-filter-btn-text">Filters</span>
+              <span class="inner-navbar-filter-count premium-filter-count" id="customFilterCountBadge"
+                aria-hidden="true">0</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="inner-navbar-filter-icon premium-filter-icon">
+                <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon>
+              </svg>
+            </button>
+          </div>
+          <div class="filters-wrapper filter-action-buttons-wrapper flex flex-wrap gap-3">
+            <div class="dropdown-filter mobile-hidden">
+                <select id="select-filter" class="form-control"
+                  aria-label="Filter by assigned to">
+                  <option value="all">High Level Points</option>
+                  <option value="john doe">Low Level Points</option>
+                </select>
+            </div>
+            <div class="filter-action-buttons flex align-items-center gap-4">
+              <div class="inner-navbar-stat-badge compact-stat-badge complete">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                  <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                </svg>
+                <span class="inner-navbar-stat-label compact-stat-label">Complete</span>
+                <span class="inner-navbar-stat-value compact-stat-value">3%</span>
+                <span class="inner-navbar-stat-meta compact-stat-meta">(9/284)</span>
+              </div>
+              <div class="inner-navbar-stat-badge compact-stat-badge installed">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="7 10 12 15 17 10"></polyline>
+                  <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+                <span class="inner-navbar-stat-label compact-stat-label">Incomplete</span>
+                <span class="inner-navbar-stat-value compact-stat-value">10%</span>
+                <span class="inner-navbar-stat-meta compact-stat-meta">(28/284)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Custom Filter Dropdowns Row -->
+      <div id="mobileFilterBackdrop" class="inner-navbar-mobile-filter-backdrop mobile-filter-backdrop"
+        aria-hidden="true"></div>
+      <div id="customFilterRow" style="display: none; margin-top: 12px;" aria-hidden="true">
+        <div class="inner-navbar-mobile-filter-drawer-head mobile-filter-drawer-head">
+          <span class="inner-navbar-mobile-filter-drawer-title mobile-filter-drawer-title">Filters</span>
+          <button type="button" id="mobileFilterCloseBtn"
+            class="inner-navbar-mobile-filter-close-btn mobile-filter-close-btn" aria-label="Close filters panel">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="filters-navbar">
+          <div class="row p-0 m-0">
+            <div class="col-12">
+              <div class="filters-wrapper flex flex-wrap gap-3">
+                <div class="dropdown-filter d-none d-md-block">
+                  <label for="select-filter" class="dropdown-label">Levels:</label>
+                  <select id="select-filter" class="select-filter form-control" aria-label="Filter by levels">
+                    <option value="all">All Levels</option>
+                    <option value="high">High Level Points</option>
+                    <option value="low">Low Level Points</option>
+                  </select>
+                </div>
+                <div class="dropdown-filter d-none d-md-block">
+                  <label for="cable-filter" class="dropdown-label">Cable Installed:</label>
+                  <select id="cable-filter" class="select-filter form-control"
+                    aria-label="Filter by cable installation status">
+                    <option value="all">All</option>
+                    <option value="completed">Completed</option>
+                    <option value="incompleted">Incompleted</option>
+                  </select>
+                </div>
+                <div class="dropdown-filter d-none d-md-block">
+                  <label for="panel-filter" class="dropdown-label">Panel Term'd:</label>
+                  <select id="panel-filter" class="select-filter form-control"
+                    aria-label="Filter by panel termination status">
+                    <option value="all">All</option>
+                    <option value="completed">Completed</option>
+                    <option value="incompleted">Incompleted</option>
+                  </select>
+                </div>
+                <div class="dropdown-filter d-none d-md-block">
+                  <label for="device-filter" class="dropdown-label">Field Device:</label>
+                  <select id="device-filter" class="select-filter form-control"
+                    aria-label="Filter by field device status">
+                    <option value="all">All</option>
+                    <option value="completed">Completed</option>
+                    <option value="incompleted">Incompleted</option>
+                  </select>
+                </div>
+                <div class="dropdown-filter d-none d-md-block">
+                  <label for="commA-filter" class="dropdown-label">Comm Check A:</label>
+                  <select id="commA-filter" class="select-filter form-control"
+                    aria-label="Filter by Comm Check A status">
+                    <option value="all">All</option>
+                    <option value="completed">Completed</option>
+                    <option value="incompleted">Incompleted</option>
+                  </select>
+                </div>
+                <div class="dropdown-filter d-none d-md-block">
+                  <label for="commB-filter" class="dropdown-label">Comm Check B:</label>
+                  <select id="commB-filter" class="select-filter form-control"
+                    aria-label="Filter by Comm Check B status">
+                    <option value="all">All</option>
+                    <option value="completed">Completed</option>
+                    <option value="incompleted">Incompleted</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="myGrid" class="ag-theme-quartz ag-grid-responsive-height"></div>
+      <div class="mt-2 text-sm text-700 page-footer-attribution">Â© 2026 - SEBA.Net</div>
+    </div>
+  </main>
+
+
+
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="/js/jquery-3.7.1.min.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/ag-grid-enterprise@32.3.0/dist/ag-grid-enterprise.min.js?t=1733931380679"></script>
+  <!-- External AG Grid Scripts -->
+  <script src="ag-grid/agGridSetup.js"></script>
+  <script src="ag-grid/pointersList.js"></script>
+  <script src="ag-grid/pointersListMobile.js"></script>
+</body>
+
+</html>
