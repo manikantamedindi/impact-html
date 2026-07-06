@@ -160,7 +160,7 @@ const projectsRowData = [
       minWidth: 100,
       maxWidth: 120,
       cellRenderer: (params) =>
-        `<a href="ProjectAddEdit.aspx?projectId=${encodeURIComponent(params.data.id)}" class="action-link">Edit</a>`,
+        `<a href="ProjectAddEdit.aspx?projectId=${encodeURIComponent(params.data.id)}" class="action-link" title="Edit"><img src="img/icons/edit.svg" alt="Edit" class="action-icon" width="18" height="18" /></a>`,
     },
   ];
 
