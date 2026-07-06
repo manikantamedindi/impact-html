@@ -1,0 +1,522 @@
+/**
+* AG Grid theme overrides and cell renderers for Impact.
+* Bundled via scss/style.scss.
+*/
+/* Quartz theme token overrides (grid uses ag-theme-quartz class) */
+.ag-theme-quartz {
+  --ag-header-column-separator-display: block;
+  --ag-header-column-separator-height: 100%;
+  --ag-header-column-separator-width: 1px;
+  --ag-header-column-separator-color: $bluegray-50;
+  --ag-header-column-resize-handle-display: block;
+  --ag-header-column-resize-handle-height: 25%;
+  --ag-header-column-resize-handle-width: 3px;
+  --ag-header-column-resize-handle-color: $bluegray-100;
+  --ag-row-border-color: $bluegray-100;
+}
+
+.ag-grid-responsive-height {
+  height: calc(100vh - 220px);
+  width: 100%;
+}
+
+/* Pagination: usable on smaller viewports */
+#myGrid .ag-paging-panel {
+  flex-wrap: wrap;
+  row-gap: 6px;
+  min-height: 44px;
+}
+
+#myGrid .ag-paging-panel > * {
+  min-width: 0;
+}
+
+#myGrid .ag-paging-row-summary-panel,
+#myGrid .ag-paging-page-summary-panel,
+#myGrid .ag-paging-description {
+  white-space: nowrap;
+}
+
+@media (max-width: 767px) {
+  #myGrid .ag-paging-panel {
+    justify-content: center;
+    padding: 8px;
+    font-size: 12px;
+    -moz-column-gap: 4px;
+         column-gap: 4px;
+  }
+  #myGrid .ag-paging-button {
+    min-width: 24px;
+    min-height: 24px;
+  }
+  #myGrid .ag-paging-page-summary-panel {
+    width: auto;
+    justify-content: center;
+    text-align: center;
+  }
+  #myGrid .ag-paging-row-summary-panel,
+  #myGrid .ag-paging-description {
+    display: none;
+  }
+}
+/* Optional: add class impact-custom-grid on the container for stricter theming */
+.impact-custom-grid {
+  --ag-font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --ag-font-size: 14px;
+  --ag-foreground-color: $gray-800;
+  --ag-background-color: $white;
+  --ag-header-background-color: $gray-50;
+  --ag-header-foreground-color: $gray-650;
+  --ag-header-column-separator-display: none;
+  --ag-header-column-resize-handle-display: none;
+  --ag-borders: none;
+  --ag-borders-row: solid 1px;
+  --ag-row-border-color: $gray-100;
+  --ag-row-hover-color: $gray-50;
+  --ag-selected-row-background-color: $rgba-primary-005;
+  --ag-cell-horizontal-padding: 24px;
+}
+
+.impact-custom-grid.ag-theme-alpine .ag-root-wrapper,
+.impact-custom-grid.ag-theme-quartz .ag-root-wrapper,
+.impact-custom-grid .ag-root-wrapper {
+  border: none;
+  box-shadow: none;
+}
+
+.impact-custom-grid .ag-header {
+  border-bottom: 1px solid var(--c-gray-300);
+}
+
+.impact-custom-grid .ag-header-cell-label {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.impact-custom-grid .ag-row {
+  border-bottom: 1px solid var(--c-gray-100);
+}
+
+.impact-custom-grid .ag-cell {
+  display: flex;
+  align-items: center;
+  line-height: normal;
+}
+
+.impact-custom-grid .ag-cell-value {
+  width: 100%;
+}
+
+/* Reusable badges inside grid cells */
+.grid-status-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  gap: 6px;
+}
+
+.grid-status-badge.success {
+  background-color: var(--c-green-100);
+  color: var(--c-green-700);
+}
+
+.grid-status-badge.failed {
+  background-color: var(--c-red-bg);
+  color: var(--c-red-600);
+}
+
+.grid-status-badge.incomplete {
+  background-color: var(--c-gray-100);
+  color: var(--c-gray-700);
+}
+
+.grid-icon-circle {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  flex-shrink: 0;
+}
+
+.grid-icon-circle.sent {
+  background-color: var(--c-red-bg);
+  color: var(--c-red-500);
+}
+
+.grid-icon-circle.received {
+  background-color: var(--c-green-100);
+  color: var(--c-green-500);
+}
+
+.grid-icon-circle.converted {
+  background-color: var(--c-blue-border);
+  color: var(--c-blue-500);
+}
+
+.grid-text-muted {
+  color: var(--c-gray-400);
+  font-size: 12px;
+  display: block;
+  margin-top: 4px;
+}
+
+.grid-text-main {
+  font-weight: 600;
+  color: var(--c-gray-900);
+  display: block;
+}
+
+.grid-flex-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Point Status List milestone cell */
+#myGrid .status-cell {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-width: 118px;
+}
+
+#myGrid .status-segments {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+}
+
+#myGrid .status-segment {
+  width: 10px;
+  height: 10px;
+  border-radius: 3px;
+  border: 1px solid var(--c-slate-300);
+  background-color: var(--c-white);
+}
+
+#myGrid .status-segment.is-filled {
+  border-color: var(--c-sky-400);
+  background-color: var(--c-sky-400);
+}
+
+#myGrid .status-fraction,
+#myGrid .status-percent {
+  font-size: 11px;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+#myGrid .status-fraction {
+  color: var(--c-slate-700);
+  font-weight: 600;
+}
+
+#myGrid .status-percent {
+  color: var(--c-slate-500);
+  font-weight: 500;
+}
+
+#myGrid .status-cell.is-complete .status-segment.is-filled {
+  border-color: var(--c-green-500);
+  background-color: var(--c-green-500);
+}
+
+#myGrid .status-cell.is-complete .status-percent {
+  color: var(--c-green-700);
+}
+
+#myGrid .status-cell.is-empty .status-percent {
+  color: var(--c-slate-400);
+}
+
+/* Controller Status List grid chrome and pills */
+.controller-status-page #myGrid .ag-header {
+  border-bottom: 1px solid var(--c-slate-200);
+}
+
+.controller-status-page #myGrid .ag-header-cell-label {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--c-slate-700);
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+
+.controller-status-page #myGrid .ag-cell {
+  border-color: var(--c-slate-100);
+}
+
+.controller-status-page #myGrid .controller-name-link,
+.controller-status-page #myGrid .controller-points-link {
+  color: var(--c-sky-600);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.controller-status-page #myGrid .controller-name-link:hover,
+.controller-status-page #myGrid .controller-points-link:hover {
+  color: var(--c-sky-700);
+  text-decoration: underline;
+}
+
+.controller-status-page #myGrid .controller-points-cell {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.controller-status-page #myGrid .controller-points-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 1px 7px;
+  border-radius: 4px;
+  background-color: var(--c-slate-900);
+  border: 1px solid var(--c-slate-900);
+  color: var(--c-slate-50);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.45px;
+  text-transform: uppercase;
+}
+
+.controller-status-page #myGrid .controller-points-label-dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: var(--c-cyan-400);
+}
+
+.controller-status-page #myGrid .controller-points-chip {
+  background-color: var(--c-sky-bg-light);
+  color: var(--c-teal-900);
+  border: 1px dashed var(--c-sky-border-light);
+  padding: 1px 8px;
+  border-radius: 999px;
+  font-size: 10px;
+  font-weight: 700;
+  box-shadow: none;
+}
+
+.controller-status-page #myGrid .controller-points-status-pill {
+  display: inline-flex;
+  justify-content: center;
+  min-width: 86px;
+  padding: 2px 9px;
+  border-radius: 999px;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 1.2;
+  border: 1px solid transparent;
+}
+
+.controller-status-page #myGrid .controller-points-status-pill.is-complete {
+  background-color: var(--c-green-100);
+  color: var(--c-green-800);
+  border-color: var(--c-primary-border);
+}
+
+.controller-status-page #myGrid .controller-points-status-pill.is-progress {
+  background-color: var(--c-yellow-bg);
+  color: var(--c-yellow-800);
+  border-color: var(--c-yellow-border);
+}
+
+.controller-status-page #myGrid .controller-points-status-pill.is-empty {
+  background-color: var(--c-slate-100);
+  color: var(--c-slate-500);
+  border-color: var(--c-slate-200);
+}
+
+.controller-status-page #myGrid .controller-status-pill {
+  display: inline-flex;
+  justify-content: center;
+  min-width: 86px;
+  padding: 2px 9px;
+  border-radius: 999px;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 1.2;
+  border: 1px solid transparent;
+}
+
+.controller-status-page #myGrid .controller-status-pill.is-complete {
+  background-color: var(--c-green-100);
+  color: var(--c-green-800);
+  border-color: var(--c-primary-border);
+}
+
+.controller-status-page #myGrid .controller-status-pill.is-pending {
+  background-color: var(--c-yellow-bg);
+  color: var(--c-yellow-800);
+  border-color: var(--c-yellow-border);
+}
+
+.controller-status-page #myGrid .controller-issues-chip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 26px;
+  padding: 2px 7px;
+  border-radius: 999px;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 1.2;
+  border: 1px solid transparent;
+}
+
+.controller-status-page #myGrid .controller-issues-chip.has-issues {
+  background-color: var(--c-red-bg);
+  color: var(--c-red-600);
+  border-color: var(--c-red-border);
+}
+
+.controller-status-page #myGrid .controller-issues-chip.no-issues {
+  background-color: var(--c-primary-bg-light);
+  color: var(--c-green-800);
+  border-color: var(--c-primary-border);
+}
+
+.controller-status-page #myGrid .controller-grid-action-btn {
+  border-radius: 999px;
+  border-color: var(--c-slate-300);
+  background-color: var(--c-slate-50);
+  color: var(--c-slate-700);
+  font-weight: 600;
+  font-size: 12px;
+  padding: 4px 12px;
+}
+
+.controller-status-page #myGrid .controller-grid-action-btn:hover,
+.controller-status-page #myGrid .controller-grid-action-btn:focus {
+  background-color: var(--c-eef2f7);
+  border-color: var(--c-slate-400);
+  color: var(--c-slate-900);
+}
+
+/* Issues List grid cells */
+.issues-list-page #myGrid .issues-type-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 86px;
+  padding: 3px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--c-slate-200);
+  background-color: var(--c-slate-100);
+  color: var(--c-slate-700);
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.issues-list-page #myGrid .issues-tag-chip {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 6px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  border: 1px dashed var(--c-sky-border-light);
+  background-color: var(--c-sky-bg-light);
+  color: var(--c-teal-900);
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.issues-list-page #myGrid .issues-photo-count {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  min-width: 38px;
+  padding: 3px 9px;
+  border-radius: 6px;
+  background-color: var(--c-sky-bg);
+  border: 1px solid var(--c-sky-border);
+  color: var(--c-sky-700);
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.issues-list-page #myGrid .issues-action-wrap {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.issues-list-page #myGrid .issues-action-icon {
+  width: 24px;
+  height: 24px;
+  border-radius: 6px;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--c-slate-700);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.issues-list-page #myGrid .issues-action-icon:first-child {
+  color: var(--c-yellow-800);
+}
+
+.issues-list-page #myGrid .issues-action-icon:last-child {
+  color: var(--c-sky-700);
+}
+
+.issues-list-page #myGrid .issues-action-icon:hover,
+.issues-list-page #myGrid .issues-action-icon:focus {
+  filter: brightness(0.96);
+  text-decoration: none;
+}
+
+.ag-grid-column-nav-link {
+  color: var(--c-link);
+  font-weight: 500;
+}
+
+.ag-grid-table-actions-columns {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  overflow: visible;
+}
+.ag-grid-table-actions-columns a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  line-height: 1;
+  overflow: visible;
+  border-radius: 6px;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+.ag-grid-table-actions-columns a:hover, .ag-grid-table-actions-columns a:focus {
+  background-color: var(--c-slate-100);
+  transform: translateY(-1px);
+  text-decoration: none;
+}
+.ag-grid-table-actions-columns img {
+  display: block;
+  width: 18px;
+  height: 18px;
+  max-width: none;
+  -o-object-fit: contain;
+     object-fit: contain;
+  transition: filter 0.2s ease;
+}
+.ag-grid-table-actions-columns a:hover img,
+.ag-grid-table-actions-columns a:focus img {
+  filter: brightness(0.92);
+}
