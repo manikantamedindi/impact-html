@@ -54,6 +54,97 @@
     </div>
 </header>
 
+<aside class="sidebar d-none d-lg-flex flex-column">
+  <nav class="sidebar-nav">
+    <a class="sidebar-link menu-item" href="index.html">
+      <i class="bi bi-house-door me-2 menu-icon"></i>
+      <span class="label">Home</span>
+    </a>
+    <a class="sidebar-link menu-item" href="ProjectList.html">
+      <i class="bi bi-list-task me-2 menu-icon"></i>
+      <span class="label">Project List</span>
+    </a>
+    <a class="sidebar-link menu-item has-sub" data-submenu="sm-points" href="javascript:void(0)">
+      <i class="bi bi-pin-map me-2 menu-icon"></i>
+      <span class="label">Points</span>
+      <i class="bi bi-chevron-right chev ms-auto"></i>
+    </a>
+    <ul id="sm-points" class="submenu">
+      <li><a class="submenu-link" href="PointStatusList.html">Point Status</a></li>
+    </ul>
+    <a class="sidebar-link menu-item has-sub" data-submenu="sm-controllers" href="javascript:void(0)">
+      <i class="bi bi-cpu me-2 menu-icon"></i>
+      <span class="label">Controllers</span>
+      <i class="bi bi-chevron-right chev ms-auto"></i>
+    </a>
+    <ul id="sm-controllers" class="submenu">
+      <li><a class="submenu-link" href="ControllerStatusList.html">Controller Status</a></li>
+    </ul>
+    <a class="sidebar-link menu-item" href="IssuesList.html">
+      <i class="bi bi-exclamation-triangle me-2 menu-icon"></i>
+      <span class="label">Issues</span>
+    </a>
+    <a class="sidebar-link menu-item" href="ImportFiles.html">
+      <i class="bi bi-file-earmark-arrow-up me-2 menu-icon"></i>
+      <span class="label">Files</span>
+    </a>
+    <a class="sidebar-link menu-item has-sub" data-submenu="sm-reports" href="javascript:void(0)">
+      <i class="bi bi-bar-chart me-2 menu-icon"></i>
+      <span class="label">Reports</span>
+      <i class="bi bi-chevron-right chev ms-auto"></i>
+    </a>
+    <ul id="sm-reports" class="submenu">
+      <li><a class="submenu-link" href="CommissioningStatusReport.html">IO Point Commissioning Type A</a></li>
+      <li><a class="submenu-link" href="CommissioningStatusReportWithPmd.html">IO Point Commissioning Type B</a></li>
+      <li><a class="submenu-link" href="Reports/ControllerInstallReport.html">Installation Points List with Wire Tags</a></li>
+      <li><a class="submenu-link" href="Reports/ControllerStatusReport.html">Controller Status Report</a></li>
+      <li><a class="submenu-link" href="ControllerMetaDataReport.html">Controller Meta Data</a></li>
+      <li><a class="submenu-link" href="QRCodes.html">Controller QR Codes</a></li>
+      <li><a class="submenu-link" href="Reports/IssuesReport.html">Project Issues</a></li>
+      <li><a class="submenu-link" href="ControllerPointsOfflineComm.html">Offline Commissioning Sheet</a></li>
+      <li><a class="submenu-link" href="Reports/ControllerPointsReport.html">Controller Points Export Report</a></li>
+    </ul>
+    <a class="sidebar-link menu-item has-sub" data-submenu="sm-project" href="javascript:void(0)">
+      <i class="bi bi-folder me-2 menu-icon"></i>
+      <span class="label">Project</span>
+      <i class="bi bi-chevron-right chev ms-auto"></i>
+    </a>
+    <ul id="sm-project" class="submenu">
+      <li><a class="submenu-link" href="Default.html">Change Project</a></li>
+      <li><a class="submenu-link" href="RemoveFromProject.html">Remove me from this Project</a></li>
+      <li><a class="submenu-link" href="ProjectList.html">Projects List</a></li>
+      <li><a class="submenu-link" href="ProjectAddEdit.html">Create New Project</a></li>
+      <li><a class="submenu-link" href="ProjectDashboard.html">Project Dashboard</a></li>
+      <li><a class="submenu-link" href="ProjectUserList.html">Project Members</a></li>
+      <li><a class="submenu-link" href="ControllerChangesList.html">Change History</a></li>
+    </ul>
+    <a class="sidebar-link menu-item has-sub" data-submenu="sm-help" href="javascript:void(0)">
+      <i class="bi bi-question-circle me-2 menu-icon"></i>
+      <span class="label">Help</span>
+      <i class="bi bi-chevron-right chev ms-auto"></i>
+    </a>
+    <ul id="sm-help" class="submenu">
+      <li><a class="submenu-link" href="https://schneiderelectric.sharepoint.com/:b:/s/DigitalBuildingsPacificZone/EZIyNNJga_NKuHu8CuhUykIBxtE7fz06u7YJjT_RmH3Agg?e=uFUqwP" target="_blank">Installers Guide</a></li>
+      <li><a class="submenu-link" href="https://schneiderelectric.sharepoint.com/:b:/s/DigitalBuildingsPacificZone/EWXBl6uFRNRDsODbGxfKwUwBa1nMA_7JJj7ixkebrIRyYg?e=ph9weM" target="_blank">Commissioning Guide</a></li>
+      <li><a class="submenu-link" href="https://schneiderelectric.sharepoint.com/:b:/s/DigitalBuildingsPacificZone/Eb4xtDPEkHVFin7eCegHu8QBGpmtR0-MUo6qkQLKM40cbw?e=kMRZrK" target="_blank">Project Administrators Guide</a></li>
+      <li><a class="submenu-link" href="https://schneiderelectric.sharepoint.com/:b:/s/DigitalBuildingsPacificZone/ET9GkJ9M9BxHrkPVckLZal8BteoplUybuni7d7nz4Cbvvw?e=oKKeYO" target="_blank">Set up Teams Notifications</a></li>
+      <li><a class="submenu-link" href="https://schneiderelectric.sharepoint.com/:b:/r/sites/DigitalBuildingsPacificZone/Main%20Site%20Documents/Systems/EEP/EEP%20Standards%20PUBLIC/EEPS07_160329_Installation%20Standards%20R2.2_dl.pdf?csf=1&amp;web=1&amp;e=ntsdiT" target="_blank">Installation Standards</a></li>
+      <li><a class="submenu-link" href="https://schneiderelectric.sharepoint.com/sites/DigitalBuildingsPacificZone/SitePages/Tools_IMPACT.aspx" target="_blank">IMPACT on Share Point</a></li>
+    </ul>
+  </nav>
+  <div class="sidebar-footer border-top p-3 d-flex align-items-center">
+    <span class="rounded-circle bg-light text-success fw-bold me-2 d-inline-grid" style="width:36px;height:36px;place-items:center;">U</span>
+    <div class="user-meta">
+      <div class="fw-semibold">User Name</div>
+    </div>
+  </div>
+</aside>
+
+<button type="button" class="sidebar-rail-tab d-none d-lg-flex" data-sidebar-toggle title="Menu" aria-label="Toggle sidebar menu">
+  <i class="bi bi-list" aria-hidden="true"></i>
+  <span class="rail-text">MENU</span>
+</button>
+
 <nav id="horizontalNav" class="navbar navbar-expand-lg brand-navbar sticky-top">
     <div class="container-fluid">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#topMenu"

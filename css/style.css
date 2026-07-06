@@ -1731,6 +1731,7 @@ a {
 }
 .main {
   padding-top: 16px;
+  width: 100%;
 }
 
 .border-circle {

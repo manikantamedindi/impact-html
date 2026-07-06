@@ -167,6 +167,7 @@ const projectsRowData = [
   const gridOptions = {
     suppressSideButtons: false,
     defaultColDef: {
+      flex: 1,
       sortable: true,
       filter: true,
       floatingFilter: false,
@@ -205,7 +206,6 @@ const projectsRowData = [
     pagination: true,
     paginationPageSize: getResponsivePageSize(),
     rowHeight: 36,
-    flexwidth: 1,
   };
 
   let currentFilteredData = [...projectsRowData];
