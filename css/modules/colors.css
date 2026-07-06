@@ -9,6 +9,12 @@
   --c-white:                    #ffffff;
   --c-black-soft:               #112233;
 
+  /* Brand */
+  --c-brand:                    #009530;
+  --c-brand-dark:               #007a26;
+  --c-brand-darker:             #0a7a28;
+  --c-brand-text:               #ffffff;
+
   /* Primary (green brand) */
   --c-primary:                  #3dcd58;
   --c-primary-dark:             #30ac47;
@@ -118,4 +124,23 @@
   --c-rgba-primary-010:         rgba(61, 205, 88, 0.1);
   --c-rgba-primary-015:         rgba(61, 205, 88, 0.15);
   --c-rgba-primary-030:         rgba(61, 205, 88, 0.3);
+
+  /* White transparencies */
+  --c-rgba-white-005:           rgba(255, 255, 255, 0.05);
+  --c-rgba-white-008:           rgba(255, 255, 255, 0.08);
+  --c-rgba-white-010:           rgba(255, 255, 255, 0.10);
+  --c-rgba-white-012:           rgba(255, 255, 255, 0.12);
+  --c-rgba-white-015:           rgba(255, 255, 255, 0.15);
+  --c-rgba-white-020:           rgba(255, 255, 255, 0.20);
+  --c-rgba-white-025:           rgba(255, 255, 255, 0.25);
+  --c-rgba-white-040:           rgba(255, 255, 255, 0.40);
+  --c-rgba-white-060:           rgba(255, 255, 255, 0.60);
+  --c-rgba-white-080:           rgba(255, 255, 255, 0.80);
+  --c-rgba-white-085:           rgba(255, 255, 255, 0.85);
+
+  /* Black transparencies (extend) */
+  --c-rgba-black-025:           rgba(0, 0, 0, 0.25);
+
+  /* Brand shadow */
+  --c-rgba-brand-020:           rgba(0, 149, 48, 0.20);
 }

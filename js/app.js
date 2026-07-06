@@ -23,7 +23,7 @@ async function loadNavbar() {
     if (!headerPlaceholder || !navPlaceholder) return;
 
     try {
-        const response = await fetch('components/navbar.html');
+        const response = await fetch('layout/navbar.html');
         console.log('Fetch response:', response);
         if (!response.ok) throw new Error('Failed to load navbar');
         const text = await response.text();

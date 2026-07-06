@@ -93,23 +93,23 @@
   min-width: 90px;
   height: 32px;
   padding: 0 14px;
-  border: 1px solid var(--c-primary);
+  border: 1px solid var(--brand);
   border-radius: 999px;
-  background-color: var(--c-primary);
-  color: var(--c-white);
+  background-color: var(--brand);
+  color: var(--brand-text);
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 0.2px;
-  box-shadow: 0 4px 10px var(--c-rgba-primary-015);
+  box-shadow: 0 4px 10px var(--c-rgba-brand-020);
   transition: border-color 0.2s ease, color 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
   cursor: pointer;
 }
 
 .filters-navbar .filters-wrapper .filter-action-buttons .fiter-button:hover,
 .filters-navbar .filters-wrapper .filter-action-buttons .fiter-button:focus {
-  border-color: var(--c-primary-dark);
-  color: var(--c-white);
-  background-color: var(--c-primary-dark);
+  border-color: var(--c-brand-dark);
+  color: var(--brand-text);
+  background-color: var(--c-brand-dark);
 }
 
 .filters-navbar .filters-wrapper .filter-action-buttons .fiter-button:focus {
