@@ -1,0 +1,67 @@
+.breadcrumb-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 12px;
+  flex-wrap: wrap;
+  padding: 16px 0 12px;
+  margin-bottom: 5px;
+}
+
+.breadcrumb-wrapper .breadcrumb-title {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--c-slate-900);
+  line-height: 1.2;
+}
+
+.breadcrumb-wrapper .breadcrumb-title-icon {
+  color: var(--c-primary);
+  font-size: 14px;
+  padding-bottom: 4px;
+}
+
+.breadcrumb-wrapper .breadcrumb-group {
+  margin-bottom: 0;
+  padding-left: 14px;
+  border-left: 1px solid var(--c-gray-140);
+  margin-left: 0;
+  text-align: left;
+}
+
+.breadcrumb-wrapper .breadcrumb-group .breadcrumb-item {
+  display: inline-flex;
+  align-items: center;
+  color: var(--c-slate-500);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.breadcrumb-wrapper .breadcrumb-group .breadcrumb-item:hover {
+  color: var(--c-primary);
+  text-decoration: none;
+}
+
+.breadcrumb-wrapper .breadcrumb-group .breadcrumb-separator {
+  margin: 0 10px;
+  color: var(--c-slate-300);
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.breadcrumb-wrapper .breadcrumb-group .breadcrumb-current {
+  color: var(--c-slate-900);
+  font-weight: 600;
+}
+
+.page-footer-attribution {
+  font-size: 14px;
+  color: var(--c-slate-700);
+  font-weight: 600;
+  padding-bottom: 8px;
+}

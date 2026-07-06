@@ -1,0 +1,137 @@
+.filters-navbar {
+  margin-bottom: 15px;
+}
+
+.filters-navbar .filters-wrapper .search-filter {
+  position: relative;
+  max-width: 200px;
+}
+
+.filters-navbar .filters-wrapper .search-filter .search-filter-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 14px;
+  height: 14px;
+  color: var(--c-slate-500);
+  pointer-events: none;
+  flex-shrink: 0;
+  transition: color 0.2s ease;
+}
+
+.filters-navbar .filters-wrapper .search-filter .search-filter-input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 6px 16px 6px 36px;
+  border: 1px solid var(--c-slate-300);
+  font-family: "Nunito", sans-serif;
+  font-size: 13px;
+  color: var(--c-slate-700);
+  background-color: var(--c-white);
+  transition: all 0.2s ease;
+  outline: none;
+  box-shadow: inset 0 1px 2px var(--c-rgba-black-002);
+  border-radius: 999px;
+}
+
+.filters-navbar .filters-wrapper .search-filter .search-filter-input:focus {
+  outline: none;
+  border-color: var(--c-primary);
+  box-shadow: 0 0 0 3px var(--c-rgba-primary-015);
+}
+
+.filters-navbar .filters-wrapper .search-filter .search-filter-input::placeholder {
+  color: var(--c-slate-400);
+}
+
+.filters-navbar .filters-wrapper .dropdown-filter {
+  max-width: 250px;
+  min-width: 150px;
+}
+
+.filters-navbar .filters-wrapper .dropdown-filter #select-filter,
+.filters-navbar .filters-wrapper .dropdown-filter .select-filter {
+  width: 100%;
+  height: 32px;
+  padding: 0 34px 0 12px;
+  border: 1px solid var(--c-slate-300);
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--c-slate-700);
+  background-color: var(--c-white);
+  box-shadow: inset 0 1px 2px var(--c-rgba-black-002);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath d='M3 4.5L6 7.5L9 4.5' fill='none' stroke='%2364758B' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: 12px 12px;
+  background-position: calc(100% - 14px) center;
+}
+
+.filters-navbar .filters-wrapper .dropdown-filter #select-filter:hover,
+.filters-navbar .filters-wrapper .dropdown-filter .select-filter:hover {
+  border-color: var(--c-slate-400);
+  background-color: var(--c-slate-50);
+}
+
+.filters-navbar .filters-wrapper .dropdown-filter #select-filter:focus,
+.filters-navbar .filters-wrapper .dropdown-filter .select-filter:focus {
+  outline: none;
+  border-color: var(--c-primary);
+  box-shadow: 0 0 0 3px var(--c-rgba-primary-015);
+}
+
+.filters-navbar .filters-wrapper .filter-action-buttons .fiter-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  min-width: 90px;
+  height: 32px;
+  padding: 0 14px;
+  border: 1px solid var(--c-primary);
+  border-radius: 999px;
+  background-color: var(--c-primary);
+  color: var(--c-white);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  box-shadow: 0 4px 10px var(--c-rgba-primary-015);
+  transition: border-color 0.2s ease, color 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+}
+
+.filters-navbar .filters-wrapper .filter-action-buttons .fiter-button:hover,
+.filters-navbar .filters-wrapper .filter-action-buttons .fiter-button:focus {
+  border-color: var(--c-primary-dark);
+  color: var(--c-white);
+  background-color: var(--c-primary-dark);
+}
+
+.filters-navbar .filters-wrapper .filter-action-buttons .fiter-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px var(--c-rgba-primary-015);
+}
+
+.filters-navbar .filters-wrapper .filter-action-buttons .fiter-button:active {
+  background-color: var(--c-green-800);
+  border-color: var(--c-green-800);
+}
+
+.filters-navbar .filters-wrapper .filter-action-buttons .fiter-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.filters-navbar .filters-wrapper .filter-action-buttons .fiter-button .filter-button-icon {
+  position: relative;
+  top: -1px;
+  font-size: 12px;
+  line-height: 1;
+  width: 18px;
+}

@@ -1,0 +1,152 @@
+.home-layout {
+  min-height: calc(100vh - 56px);
+  display: flex;
+  align-items: stretch;
+  font-family: "Nunito", sans-serif;
+}
+
+.home-form-col {
+  flex: 1 1 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--c-white);
+  padding: 2rem;
+}
+
+.home-form-inner {
+  width: 100%;
+  max-width: 460px;
+}
+
+.home-form-header {
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.home-heading-text {
+  margin-bottom: 0.5rem;
+}
+
+.home-heading-title {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--c-slate-900);
+  line-height: 1.4;
+  margin: 0;
+}
+
+.home-brand-line {
+  margin-bottom: 2rem;
+}
+
+.home-form-logo {
+  width: 180px;
+}
+
+.home-timezone-text {
+  text-align: center;
+  font-size: 0.75rem;
+  color: var(--c-slate-400);
+  margin-top: 1rem;
+}
+
+.home-footer-text {
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--c-slate-400);
+  margin-top: 2rem;
+}
+
+.home-field-group {
+  margin-top: 2rem;
+}
+
+.home-field-label {
+  display: block;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--c-slate-500);
+  margin-bottom: 0.5rem;
+}
+
+.home-select-wrap {
+  position: relative;
+}
+
+.home-select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 100%;
+  padding: 0.9rem 2.8rem 0.9rem 1.1rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--c-slate-900);
+  background: var(--c-white);
+  border: 2px solid var(--c-slate-200);
+  border-radius: 12px;
+  cursor: pointer;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.home-select:hover {
+  border-color: var(--c-primary);
+}
+
+.home-select:focus {
+  outline: none;
+  border-color: var(--c-primary);
+  box-shadow: 0 0 0 4px var(--c-rgba-primary-010);
+}
+
+.home-select-chevron {
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  pointer-events: none;
+  color: var(--c-slate-400);
+  transition: color 0.25s ease;
+}
+
+.home-select:focus + .home-select-chevron,
+.home-select:hover + .home-select-chevron {
+  color: var(--c-primary);
+}
+
+.home-checkbox-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 1rem;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.home-checkbox {
+  width: 1.125rem;
+  height: 1.125rem;
+  accent-color: var(--c-primary);
+  cursor: pointer;
+  margin: 0;
+}
+
+.home-checkbox-label {
+  font-size: 0.86rem;
+  color: var(--c-slate-500);
+  cursor: pointer;
+}
+
+@media (max-width: 991px) {
+  .home-layout {
+    min-height: auto;
+  }
+  .home-form-col {
+    padding: 3rem 1.5rem;
+  }
+}

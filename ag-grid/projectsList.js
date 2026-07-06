@@ -273,9 +273,21 @@ const projectsRowData = [
     }
   };
 
+  var _loaderHidden = false;
+
+  const hidePageLoader = () => {
+    if (_loaderHidden) return;
+    _loaderHidden = true;
+    var loader = document.getElementById("pageLoader");
+    if (loader) loader.classList.add("is-hidden");
+  };
+
+  setTimeout(hidePageLoader, 10000);
+
   const initializeProjectsList = () => {
     ensureGridForViewport();
     updateStats();
+    hidePageLoader();
 
     const searchInput = document.getElementById("projectSearch");
     const stateFilter = document.getElementById("stateFilter");

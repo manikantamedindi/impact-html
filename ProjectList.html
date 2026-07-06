@@ -34,13 +34,21 @@
   </head>
 
   <body class="home-page project-list-page bg-default">
+    <div id="pageLoader" class="page-loader">
+      <div class="page-loader-content">
+        <div class="spinner-border" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+        <span class="page-loader-text">Loading project data...</span>
+      </div>
+    </div>
+
     <div class="app-container">
       <div id="header-placeholder"></div>
 
       <div class="page-content">
         <div id="sidebar-placeholder"></div>
         <div id="nav-placeholder"></div>
-
         <main class="main bg-default sister-technology-page">
           <div class="body-container">
             <div class="breadcrumb-wrapper">
