@@ -35,9 +35,6 @@ a {
 
 .bg-default {
   background-color: var(--c-gray-100) !important;
-}
-
-.home-page {
   min-width: calc(100vw - 16px) !important;
 }
 
@@ -59,7 +56,7 @@ a {
   body {
     min-width: 0 !important;
   }
-  .home-page {
+  .bg-default {
     min-width: 0 !important;
   }
 }

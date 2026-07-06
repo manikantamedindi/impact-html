@@ -33,7 +33,7 @@
     <link rel="stylesheet" href="css/modules/navigation.css" />
   </head>
 
-  <body class="home-page project-list-page bg-default">
+  <body class="bg-default">
     <div id="pageLoader" class="page-loader">
       <div class="page-loader-content">
         <div class="spinner-border" role="status">
@@ -49,12 +49,12 @@
       <div class="page-content">
         <div id="sidebar-placeholder"></div>
         <div id="nav-placeholder"></div>
-        <main class="main bg-default sister-technology-page">
+        <main class="main bg-default">
           <div class="body-container">
             <div class="breadcrumb-wrapper">
               <h2 class="breadcrumb-title">
                 <span
-                  class="glyphicon glyphicon-th-list breadcrumb-title-icon"
+                  class="breadcrumb-title-icon"
                   aria-hidden="true"
                 ></span>
                 Project List
@@ -66,7 +66,7 @@
               </div>
             </div>
 
-            <div class="filters-navbar issues-list-filters-navbar">
+            <div class="filters-navbar">
               <div class="row p-0 m-0">
                 <div class="col-md-3 ps-0">
                   <div class="filters-wrapper">
@@ -131,73 +131,6 @@
               id="projectsGrid"
               class="ag-theme-quartz ag-grid-responsive-height"
             ></div>
-            <div
-              id="projectsMobileCards"
-              class="projects-mobile-cards"
-              aria-live="polite"
-            ></div>
-            <template id="projectsMobileCardTemplate">
-              <article class="projects-mobile-card">
-                <div class="projects-mobile-card-head">
-                  <a
-                    class="projects-mobile-project-link"
-                    data-role="project-link"
-                    href="#"
-                  ></a>
-                  <span class="projects-mobile-state" data-role="state"></span>
-                </div>
-                <div class="projects-mobile-meta-grid">
-                  <div class="projects-mobile-meta-item">
-                    <span class="projects-mobile-meta-label"
-                      >Project Number</span
-                    >
-                    <span
-                      class="projects-mobile-meta-value"
-                      data-role="project-number"
-                    ></span>
-                  </div>
-                  <div class="projects-mobile-meta-item">
-                    <span class="projects-mobile-meta-label">Manager</span>
-                    <span
-                      class="projects-mobile-meta-value"
-                      data-role="manager"
-                    ></span>
-                  </div>
-                  <div class="projects-mobile-meta-item">
-                    <span class="projects-mobile-meta-label">Start Date</span>
-                    <span
-                      class="projects-mobile-meta-value"
-                      data-role="start-date"
-                    ></span>
-                  </div>
-                  <div class="projects-mobile-meta-item">
-                    <span class="projects-mobile-meta-label">End Date</span>
-                    <span
-                      class="projects-mobile-meta-value"
-                      data-role="end-date"
-                    ></span>
-                  </div>
-                  <div
-                    class="projects-mobile-meta-item projects-mobile-meta-item-wide"
-                  >
-                    <span class="projects-mobile-meta-label">Description</span>
-                    <span
-                      class="projects-mobile-meta-value"
-                      data-role="description"
-                    ></span>
-                  </div>
-                </div>
-                <div class="projects-mobile-card-foot">
-                  <a
-                    class="projects-mobile-action-link"
-                    data-role="edit-link"
-                    href="#"
-                    >Edit</a
-                  >
-                </div>
-              </article>
-            </template>
-
             <div class="mt-2 small text-body-secondary page-footer-attribution">
               © 2026 - SEBA.Net
             </div>
